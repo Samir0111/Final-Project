@@ -175,15 +175,16 @@ html, body {
     cursor: pointer;
     position: absolute;
     right: 5%;
-    top: 2%;
+    top: 2% !important;
     z-index: 1100;
 }
 
 .menu-icon {
-    font-size: 6vw;
+    font-size: 5vw !important;
+    margin-top: 15px !important;
+
 }
 
-/* Side Menu */
 .side-menu {
     position: fixed;
     top: 0;
@@ -475,4 +476,159 @@ transition: all 0.5s;}
 
 .side-menu-list{
     text-align: center;
+}
+
+.background-slider-header {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Push it behind other content */
+    overflow: hidden;
+}
+
+.background-image-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 10; 
+    background-color: transparent;
+    position: fixed; 
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.4s ease, background-color 0.4s ease; 
+  }
+
+
+
+header.sticky {
+    position: fixed; 
+    
+    top: -2.3vw;
+    background-color: rgba(0, 0, 0, 0.914);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.66); 
+}
+
+/* sssssssssssssssssssssssssssssssssssssssssssss */
+
+/* General Slider Section */
+.slider-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+}
+
+/* Slider Wrapper */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Individual Slide */
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Text Area */
+.slide-text {
+    width: 40%;
+    color: #fff;
+    margin-left: 5%;
+}
+
+.slide-text h2 {
+    font-size: 4rem;
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+.slide-text span {
+    color: white;
+}
+
+.slide-text p {
+    font-size: 1.2rem;
+}
+
+.btn-yellow {
+    background-color: #ffc107;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn-yellow:hover {
+    background-color: #f37021;
+    color: white;
+}
+
+/* Image Area */
+.slide-image {
+    position: relative;
+    width: 50%;
+    margin-right: 5%;
+}
+
+.circle-image {
+    width: 80%;
+}
+
+.discount-image {
+    position: absolute;
+    top: -15%;
+    right: -5%;
+    width: 120px;
+    z-index: 2;
+}
+
+/* Slider Navigation Dots */
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slider-nav .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #b8b8b8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-nav .dot.active {
+    background-color: #ffc107;
 }
