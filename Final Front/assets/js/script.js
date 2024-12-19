@@ -56,40 +56,31 @@ window.addEventListener("scroll", function () {
 });
 
 //sssssssssssssssssssssssssss
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".slide");
-    const sliderNav = document.querySelector(".slider-nav");
-
+    const prevArrow = document.querySelector(".arrow-left");
+    const nextArrow = document.querySelector(".arrow-right");
     let currentIndex = 0;
 
-    // Generate dots based on slides
-    slides.forEach((_, index) => {
-        const dot = document.createElement("span");
-        dot.classList.add("dot");
-        if (index === 0) dot.classList.add("active");
-        dot.setAttribute("data-index", index);
-        sliderNav.appendChild(dot);
-    });
-
-    const dots = document.querySelectorAll(".dot");
-
+    // Function to show a specific slide
     function showSlide(index) {
         slides.forEach((slide, i) => {
             slide.classList.toggle("active", i === index);
-            dots[i].classList.toggle("active", i === index);
         });
+        currentIndex = index;
     }
 
-    // Event Listener for Dots
-    dots.forEach((dot) => {
-        dot.addEventListener("click", () => {
-            currentIndex = parseInt(dot.getAttribute("data-index"));
-            showSlide(currentIndex);
-        });
+    // Event listeners for arrows
+    prevArrow.addEventListener("click", () => {
+        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
     });
 
-    // Initialize first slide
+    nextArrow.addEventListener("click", () => {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+    });
+
+    // Initialize the first slide
     showSlide(currentIndex);
 });

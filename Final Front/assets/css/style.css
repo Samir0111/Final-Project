@@ -135,7 +135,6 @@ html, body {
 
 .navbar-nav .dropdown-toggle:hover {
     color: #ffc107 !important;
-    text-decoration:underline;
 }
 
 
@@ -517,57 +516,84 @@ header.sticky {
 }
 
 /* sssssssssssssssssssssssssssssssssssssssssssss */
-
 /* General Slider Section */
-.slider-section {
+.slider-area {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
-    background: transparent;
 }
 
-/* Slider Wrapper */
-.slider-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-/* Individual Slide */
-.slide {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Background Image */
+.slider-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 0; /* Background stays behind */
+}
+
+.slider-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the background fills the area */
+}
+
+/* Slider Content Section */
+.slider-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Content above the background */
+}
+
+/* Slider Wrapper */.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start outside the viewport */
+    width: 100%;
+    height: 100%;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    z-index: 2;
 }
 
 .slide.active {
+    left: 0; /* Slide into the viewport */
     opacity: 1;
     visibility: visible;
+    z-index: 3;
 }
+
+.slide:not(.active) {
+    left: -100%; /* Slide out of the viewport */
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
 
 /* Text Area */
 .slide-text {
     width: 40%;
     color: #fff;
-    margin-left: 5%;
+    margin-left: 9%;
+    z-index: 3;
+    font-family: Poppinsthree;
 }
 
 .slide-text h2 {
-    font-size: 4rem;
+    font-size: 4vw;
     color: #ffc107;
-    margin-bottom: 20px;
+    margin-bottom: 1vh !important;
 }
 
 .slide-text span {
@@ -575,60 +601,144 @@ header.sticky {
 }
 
 .slide-text p {
-    font-size: 1.2rem;
+    font-size: 1.2vw;
+    padding-bottom: 3%;
+    
+    font-family: Poppinstwo !important;
+
 }
 
 .btn-yellow {
     background-color: #ffc107;
-    padding: 10px 20px;
+    padding: 1vw 2vw;
     color: black;
-    border-radius: 30px;
+    border-radius: 3vw;
     text-decoration: none;
+    font-family: Poppinsfour !important;
+    font-size: 1.2vw;
+    transition: all 0.3s ease-in-out; /* Add transition for smooth hover effect */
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden; /* Ensure animations don't overflow the button */
 }
 
 .btn-yellow:hover {
     background-color: #f37021;
     color: white;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
+
+
+
+
 
 /* Image Area */
 .slide-image {
     position: relative;
-    width: 50%;
-    margin-right: 5%;
+    width: 45%;
+    margin-right: 4%;
+    z-index: 3;
 }
 
 .circle-image {
-    width: 80%;
+    width: 62%;
+    margin-top: 10% !important;
+    max-width: 40vw;
 }
 
 .discount-image {
     position: absolute;
-    top: -15%;
-    right: -5%;
-    width: 120px;
-    z-index: 2;
+    top: 15%;
+    right: 25%;
+    width: 25%;
+    z-index: 3;
 }
-
 /* Slider Navigation Dots */
 .slider-nav {
     position: absolute;
-    bottom: 20px;
+    bottom: 5vh; /* Adjust the position based on preference */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 1vw; /* Even spacing between dots */
+    z-index: 3; /* Above the slider */
 }
 
 .slider-nav .dot {
-    width: 15px;
-    height: 15px;
-    background-color: #b8b8b8;
+    width: 1.5vw; /* Dot size */
+    height: 1.5vw;
+    background-color: #b8b8b8; /* Inactive dot color */
+    border-radius: 50%; /* Make dots circular */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-nav .dot.active {
+    background-color: #ffc107; /* Active dot color */
+}
+
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .slide-image {
+        display: none; /* Hide food image */
+    }
+
+    .circle-image,
+    .discount-image {
+        display: none; /* Hide discount bubble */
+    }
+
+    .slide-text {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .slide-text h2 {
+        font-size: 6vw;
+    }
+
+    .slide-text p {
+        font-size: 4vw;
+    margin-bottom: 10%;
+
+    }
+    
+
+
+
+    .btn-yellow {
+        font-size: 4vw;
+        padding: 2vw 5vw;
+    }
+}
+
+
+.slider-nav-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.arrow-left, .arrow-right {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
     border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.slider-nav .dot.active {
-    background-color: #ffc107;
+.arrow-left:hover, .arrow-right:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
