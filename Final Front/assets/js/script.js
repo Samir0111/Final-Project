@@ -8,29 +8,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const overlay = document.getElementById("overlay");
     
 
-    // Function to open the menu
     function openMenu() {
         sideMenu.classList.add("active");
         overlay.classList.add("active");
-        menuIcon.classList.add("d-none"); // Hide hamburger
-        closeIcon.classList.remove("d-none"); // Show close icon
-    }
+        menuIcon.classList.add("d-none"); 
+        closeIcon.classList.remove("d-none");}
 
-    // Function to close the menu
     function closeMenu() {
         sideMenu.classList.remove("active");
         overlay.classList.remove("active");
-        closeIcon.classList.add("d-none"); // Hide close icon
-        menuIcon.classList.remove("d-none"); // Show hamburger
+        closeIcon.classList.add("d-none");
+        menuIcon.classList.remove("d-none"); 
     }
 
-    // Open menu on hamburger click
     menuToggle.addEventListener("click", openMenu);
 
-    // Close menu on close icon click
     closeIcon.addEventListener("click", closeMenu);
 
-    // Close menu on overlay click
     overlay.addEventListener("click", closeMenu);
 });
 
@@ -40,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const accountDropdown = document.getElementById('accountDropdown');
 
     accountToggle.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default link behavior
-        accountDropdown.classList.toggle('d-none'); // Toggle the dropdown visibility
+        event.preventDefault(); 
+        accountDropdown.classList.toggle('d-none'); 
     });
 });
 
@@ -49,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
     if (window.scrollY > 50) { 
-        header.classList.add("sticky"); // Snap to top
+        header.classList.add("sticky"); 
     } else {
-        header.classList.remove("sticky"); // Restore initial spacing
+        header.classList.remove("sticky"); 
     }
 });
 
@@ -62,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextArrow = document.querySelector(".arrow-right");
     let currentIndex = 0;
 
-    // Function to show a specific slide
     function showSlide(index) {
         slides.forEach((slide, i) => {
             slide.classList.toggle("active", i === index);
@@ -70,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = index;
     }
 
-    // Event listeners for arrows
     prevArrow.addEventListener("click", () => {
         const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
         showSlide(prevIndex);
@@ -81,6 +73,32 @@ document.addEventListener("DOMContentLoaded", () => {
         showSlide(nextIndex);
     });
 
-    // Initialize the first slide
     showSlide(currentIndex);
 });
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const foodImages = document.querySelectorAll(".food-img");
+//     const lightbox = document.getElementById("lightbox");
+//     const lightboxImg = document.getElementById("lightboxImg");
+//     const lightboxClose = document.getElementById("lightboxClose");
+
+//     foodImages.forEach((img) => {
+//         img.addEventListener("click", () => {
+//             const fullSrc = img.getAttribute("data-src");
+//             lightboxImg.setAttribute("src", fullSrc);
+//             lightbox.classList.add("active");
+//         });
+//     });
+
+//     lightboxClose.addEventListener("click", () => {
+//         lightbox.classList.remove("active");
+//     });
+
+//     lightbox.addEventListener("click", (e) => {
+//         if (e.target === lightbox) {
+//             lightbox.classList.remove("active");
+//         }
+//     });
+// });

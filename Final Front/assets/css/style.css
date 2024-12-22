@@ -1007,4 +1007,398 @@ header.sticky {
 }
 
 
+.call-to-action-section {
+    background-color: #111;
+    padding: 8vh 5vw;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.cta-title {
+    font-size: 1.5vw;
+    color: #ffc107;
+    font-family: "Poppinsfour";
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cta-heading {
+    font-size: 3.5vw;
+    font-family: "Poppinsthree";
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.cta-subtitle {
+    font-size: 1.2vw;
+    font-family: "Poppinstwo";
+    color: #b8b8b8;
+    margin-bottom: 2rem;
+}
+
+.cta-left-content {
+    flex: 1 1 40%;
+}
+
+.cta-form-content {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5vw;
+}
+
+.cta-form-item {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-icon {
+    width: 3vw;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.cta-form-label {
+    font-size: 1vw;
+    color: #b8b8b8;
+    font-family: "Poppinsfour";
+    margin: 0;
+}
+
+.cta-divider {
+    width: 0.2vw;
+    height: 3vw;
+    background-color: #333;
+    margin: 0 1vw;
+}
+
+.btn-yellow {
+    background-color: #ffc107;
+    padding: 1vw 3vw;
+    color: black;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Poppinsfour";
+    font-size: 1.2vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-yellow:hover {
+    background-color: #f37021;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
+}
+
+.cta-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .call-to-action-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 6vh 3vw;
+    }
+
+    .cta-left-content {
+        margin-bottom: 3vh;
+        flex: 1 1 100%;
+    }
+
+    .cta-form-content {
+        flex-direction: column;
+        gap: 2vh;
+        flex: 1 1 100%;
+    }
+
+    .cta-form-item {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .cta-icon {
+        width: 6vw;
+    }
+
+    .cta-form-label {
+        font-size: 1.5vw;
+    }
+
+    .cta-divider {
+        height: 0.2vw;
+        width: 100%;
+        margin: 1vh 0;
+    }
+
+    .btn-yellow {
+        font-size: 2.5vw;
+        padding: 1.5vw 4vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .cta-heading {
+        font-size: 5vw;
+    }
+
+    .cta-title {
+        font-size: 3vw;
+    }
+
+    .cta-form-label {
+        font-size: 2vw;
+    }
+
+    .cta-icon {
+        width: 8vw;
+    }
+}
+
+
+
+
+/* home menu  */
+
+
+/* General Styling for Home Menu Section */
+
+
+
+
+.home-menu-section .container {
+    position: relative;
+    z-index: 2;
+    
+}
+
+/* Section Title Styling */
+.section-title{
+    position: relative;
+    left: 35% !important;
+}
+
+
+
+.discount-banner {
+    
+    left: 3.2vw;
+}
+
+
+
+
+
+.section-title h3 {
+    color: #b8b8b8;
+    font-size: 1.5rem;
+    font-family: "Poppinstwo", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    font-family: "Poppinsthree", sans-serif;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.section-title .divider {
+    width: 5%;
+    height: 3px;
+    background-color: #ffc107;
+    margin: 0 auto;
+}
+
+/* Food Item Styling */
+.popular-meals {
+    margin-top: 3rem;
+}
+
+.food-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 10%;
+}
+
+.meal-details {
+    flex: 1;
+    font-family: "Poppinsfour", sans-serif;
+}
+
+.meal-details h4 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-family: "Poppinsthree", sans-serif;
+}
+
+.meal-details p {
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    margin: 0;
+}
+
+.meal-price {
+    text-align: right;
+    font-family: "Poppinsfour", sans-serif;
+}
+
+.new-price {
+    font-size: 1.2rem;
+    color: #ffc107;
+    font-weight: bold;
+    background: rgba(255, 193, 7, 0.1);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.old-price {
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+/* Discount Banner Styling */
+.discount-banner {
+    margin-top: 3rem;
+    
+    position: relative;
+
+    text-align: center;
+}
+
+.discount-banner img {
+    width: 85%;
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .food-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .meal-details h4 {
+        font-size: 1rem;
+    }
+
+    .meal-details p {
+        font-size: 0.8rem;
+    }
+
+    .new-price {
+        font-size: 1rem;
+    }
+
+    .old-price {
+        font-size: 0.8rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .section-title h3 {
+        font-size: 1rem;
+    }
+
+    .section-title .divider {
+        width: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .popular-meals {
+        margin-top: 2rem;
+    }
+
+    .section-title{
+        position: relative;
+        left: -1% !important;
+    }
+
+    .discount-banner img {
+        width: 100%;
+    }
+
+    .meal-details h4,
+    .new-price {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+.discount-banner {
+    
+    display: none;
+}
+}
+
+
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox img {
+    width: 10%;
+height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
