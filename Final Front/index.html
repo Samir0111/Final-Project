@@ -172,10 +172,15 @@
 
                 <div class="container text-center" >
                     <div class="section-title">
+                       
+
+                       
                         <h3>FEATURES</h3>
                         <h2>CORE FEATURES</h2>
                         <img src="./assets/imgs/line.png" alt="Divider" class="divider" data-src="./assets/imgs/foodpichome1.png">
-                    </div>
+                    
+                  
+                </div>
                     <div class="row justify-content-center mt-5">
                         <!-- Feature 1 -->
                         <div class="col-lg-3 col-md-6 feature-box">
@@ -425,6 +430,112 @@
                 </div>
             </section>
               
+            <section class="menu-section py-5">
+                <div class="container text-center">
+                    <div class="section-title">
+                        <div class="meow-menu">
+                        <h3>SHOWCASE</h3>
+                        <h2>FOOD MENUS</h2>
+                        <div class="divider"></div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Food Menu Items -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="menu-item">
+                                <img src="./assets/imgs/menu-01.png" alt="Menu Item 1" class="img-fluid food-image" onclick="openImageFullscreen(this)">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="menu-item">
+                                <img src="./assets/imgs/menu-02.png" alt="Menu Item 2" class="img-fluid food-image" onclick="openImageFullscreen(this)">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="menu-item">
+                                <img src="./assets/imgs/menu-03.png" alt="Menu Item 3" class="img-fluid food-image" onclick="openImageFullscreen(this)">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="menu-item">
+                                <img src="./assets/imgs/menu-04.png" alt="Menu Item 4" class="img-fluid food-image" onclick="openImageFullscreen(this)">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="menu-item">
+                                <img src="./assets/imgs/menu-05.png" alt="Menu Item 5" class="img-fluid food-image" onclick="openImageFullscreen(this)">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="menu-item">
+                                <img src="./assets/imgs/menu-06.png" alt="Menu Item 6" class="img-fluid food-image" onclick="openImageFullscreen(this)">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="menu-item">
+                                <img src="./assets/imgs/menu-07.png" alt="Menu Item 7" class="img-fluid food-image" onclick="openImageFullscreen(this)">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="menu-item">
+                                <img src="./assets/imgs/menu-08.png" alt="Menu Item 8" class="img-fluid food-image" onclick="openImageFullscreen(this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Fullscreen Modal -->
+                <div id="fullscreenModal" class="fullscreen-modal" onclick="closeImageFullscreen()">
+                    <img id="fullscreenImage" src="" alt="Expanded Image">
+                    <span class="close-btn">&times;</span>
+                </div>
+            </section>
+            
+
+            <section class="our-chefs-section" style="background-image: url('./assets/imgs/team-bg.png' );  background-size: cover;">
+                <div class="container py-5 text-center">
+                    <div class="section-title mb-5 meow-chefs">
+                        <h3 class="text-uppercase text-warning">Team</h3>
+                        <h2 class="display-4 font-weight-bold">Our Chefs</h2>
+                        <div class="divider mx-auto my-3" style="width: 60px; height: 3px; background-color: #ffc107;"></div>
+                </div>
+            
+                    <div class="row justify-content-center">
+                        <!-- Chef 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="chef-card position-relative overflow-hidden">
+                                <img src="./assets/imgs/team01.png" alt="Rosalina Dumble" class="img-fluid rounded">
+                                <div class="chef-overlay d-flex flex-column justify-content-center align-items-center">
+                                    <h4 class="chef-name text-white mb-2">Rosalina Dumble</h4>
+                                    <p class="chef-role text-warning">Founder</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Chef 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="chef-card position-relative overflow-hidden">
+                                <img src="./assets/imgs/team02.png" alt="Troma D. Miranda" class="img-fluid rounded">
+                                <div class="chef-overlay d-flex flex-column justify-content-center align-items-center">
+                                    <h4 class="chef-name text-white mb-2">Troma D. Miranda</h4>
+                                    <p class="chef-role text-warning">Head Chef</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Chef 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="chef-card position-relative overflow-hidden">
+                                <img src="./assets/imgs/team03.png" alt="Humble B. Drowni" class="img-fluid rounded">
+                                <div class="chef-overlay d-flex flex-column justify-content-center align-items-center">
+                                    <h4 class="chef-name text-white mb-2">Humble B. Drowni</h4>
+                                    <p class="chef-role text-warning">Co-Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
         </main>
         

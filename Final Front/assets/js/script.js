@@ -102,3 +102,15 @@ document.addEventListener("DOMContentLoaded", () => {
 //         }
 //     });
 // });
+
+function openImageFullscreen(img) {
+    const modal = document.getElementById("fullscreenModal");
+    const fullscreenImg = document.getElementById("fullscreenImage");
+    fullscreenImg.src = img.src;
+    modal.style.display = "flex";
+}
+
+function closeImageFullscreen() {
+    const modal = document.getElementById("fullscreenModal");
+    modal.style.display = "none";
+}
