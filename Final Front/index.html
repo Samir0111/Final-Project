@@ -1,29 +1,23 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/css/pikaday.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.min.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="./assets/css/style.css"></head>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
     <body>
         <header>
-           
-    
-          
             <nav class="navbar navbar-light" style="background-color: transparent;">
-                <div id="header-sticky" class=" container">
+                <div id="header-sticky" class="container">
                         <div class="col-xl-2 col-lg-2">
                             <a class="navbar-brand header-logo" href="#">
                                 <img src="./assets/imgs/logo.png" width="30" height="30" alt="">
                             </a>
                         </div>  
-                        
-                  
-                    
-                    
                         <div class="navigator">
                             <ul class="navbar-nav d-flex flex-row ">
                                 <li class="nav-item px-3"><a class="nav-link" href="#">Home</a></li>
@@ -41,71 +35,47 @@
                                         <li><a class="dropdown-item" href="#">Register</a></li>
                                     </ul>
                                 </li>
-                                
                                 <li class="nav-item px-3 button-nav">
                                     <a class="btn book-seat rounded-pill px-4 py-2" href="#">BOOK SEAT</a>
                                 </li>
                             </ul>
                         </div>
-             
                      </div>
-                 <!-- Hamburger and Close Icon -->
-   
                  <div class="menu-toggle d-lg-none" id="menuToggle">
-                    <span class="menu-icon" id="menuIcon">&#9776;</span> <!-- Hamburger Icon -->
+                    <span class="menu-icon" id="menuIcon">&#9776;</span>
                 </div>
-    <!-- Side Menu -->
-    <div class="side-menu" id="sideMenu">
-        <div class="menu-toggle d-lg-none" id="menuToggle">
-            <span class="close-icon" id="closeIcon">&times;</span> <!-- Close Icon -->
-        </div>
-       
-        <ul class="side-menu-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="dropdown">
-                <a href="#" id="accountToggle" class="dropdown-toggle">
-                    <span>Account</span>
-                </a>
-                <ul class="dropdown-list d-none" id="accountDropdown">
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-            </li>
-            
-                <button class="button-78" role="button">BOOK SEAT</button>
-            
-        </ul>
-
-        
-    </div>
- 
-    
-    
-    <!-- Overlay -->
-    <div class="overlay" id="overlay"></div>
-    
-    
+                <div class="side-menu" id="sideMenu">
+                    <div class="menu-toggle d-lg-none" id="menuToggle">
+                        <span class="close-icon" id="closeIcon">&times;</span>
+                    </div>
+                    <ul class="side-menu-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" id="accountToggle" class="dropdown-toggle">
+                                <span>Account</span>
+                            </a>
+                            <ul class="dropdown-list d-none" id="accountDropdown">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                        </li>
+                        <button class="button-78" role="button">BOOK SEAT</button>
+                    </ul>
+                </div>
+                <div class="overlay" id="overlay"></div>
             </nav>
-
-         
         </header>
-       
-
         <main>
             <section class="slider-area">
                 <div class="slider-background">
-                    <!-- Background Image -->
                     <img src="./assets/imgs/home-bg1.png" alt="Background" class="slider-bg-img">
                 </div>
-        
-                <!-- Slider Section -->
                 <div class="slider-section">
                     <div class="slider-wrapper">
-                        <!-- Slide 1 -->
                         <div class="slide active">
                             <div class="slide-text">
                                 <h2>WE TAKE <br><span>PRIDE IN OUR FOOD</span></h2>
@@ -117,8 +87,6 @@
                                 <img src="./assets/imgs/home-discount.png" alt="50% Discount" class="discount-image">
                             </div>
                         </div>
-        
-                        <!-- Slide 2 -->
                         <div class="slide">
                             <div class="slide-text">
                                 <h2>DISCOVER <br><span>OUR SPECIAL MENU</span></h2>
@@ -131,24 +99,17 @@
                             </div>
                         </div>
                     </div>
-        
                     <div class="slider-nav-arrows">
                         <button class="arrow-left">&#10094;</button>
                         <button class="arrow-right">&#10095;</button>
                     </div>
-                    
-
                 </div>
             </section>
-
             <section class="about-us-section">
                 <div class="container d-flex align-items-center justify-content-between">
-                    <!-- Image Section -->
                     <div class="about-us-image">
                         <img src="./assets/imgs/about-us.png" alt="About Us" class="img-fluid">
                     </div>
-            
-                    <!-- Content Section -->
                     <div class="about-us-content">
                         <h3>ABOUT US <span class="line"></span></h3>
                         <h2>LOCATED IN A SMALL TOWN</h2>
@@ -164,25 +125,16 @@
                             </div>
                         </div>
                     </div>
-            
-                   
                 </div>
             </section>
             <section class="core-features-section" style="background-image: url('./assets/imgs/features-bg.png' );  background-size: cover;">
-
                 <div class="container text-center" >
                     <div class="section-title">
-                       
-
-                       
                         <h3>FEATURES</h3>
                         <h2>CORE FEATURES</h2>
                         <img src="./assets/imgs/line.png" alt="Divider" class="divider" data-src="./assets/imgs/foodpichome1.png">
-                    
-                  
-                </div>
+                    </div>
                     <div class="row justify-content-center mt-5">
-                        <!-- Feature 1 -->
                         <div class="col-lg-3 col-md-6 feature-box">
                             <div class="feature-icon">
                                 <img src="./assets/imgs/home-icon1.png" alt="Best Quality Food">
@@ -192,7 +144,6 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab.</p>
                             <a href="#" class="read-more">Read More</a>
                         </div>
-                        <!-- Feature 2 -->
                         <div class="col-lg-3 col-md-6 feature-box mx-lg-5">
                             <div class="feature-icon">
                                 <img src="./assets/imgs/home-icon2.png" alt="24/7 On Hotel">
@@ -202,7 +153,6 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab.</p>
                             <a href="#" class="read-more">Read More</a>
                         </div>
-                        <!-- Feature 3 -->
                         <div class="col-lg-3 col-md-6 feature-box">
                             <div class="feature-icon">
                                 <img src="./assets/imgs/home-icon3.png" alt="Easy Reservation">
@@ -215,7 +165,7 @@
                     </div>
                 </div>
             </section>
-            
+
             
             <section class="call-to-action-section">
                 <div class="container d-flex align-items-center justify-content-between">
@@ -273,7 +223,6 @@
                   </div>
               
                   <div class="row popular-meals">
-                    <!-- Food Items -->
                     <div class="col-md-6 d-flex align-items-center my-3">
                         <img src="./assets/imgs/foodpichome1.png" alt="Crispy Fried Chicken" class="food-img" >
                         <div class="meal-details ms-3">
@@ -371,7 +320,6 @@
                     </div>
                   </div>
               
-                  <!-- Discount Banner -->
                   <div class="discount-banner mt-5">
                     <img src="./assets/imgs/ad-banner.png" alt="Discount Banner" class="img-fluid">
                   </div>
@@ -440,7 +388,6 @@
                         </div>
                     </div>
                     <div class="row g-4">
-                        <!-- Food Menu Items -->
                         <div class="col-md-3 col-sm-6">
                             <div class="menu-item">
                                 <img src="./assets/imgs/menu-01.png" alt="Menu Item 1" class="img-fluid food-image" onclick="openImageFullscreen(this)">
@@ -484,7 +431,6 @@
                     </div>
                 </div>
             
-                <!-- Fullscreen Modal -->
                 <div id="fullscreenModal" class="fullscreen-modal" onclick="closeImageFullscreen()">
                     <img id="fullscreenImage" src="" alt="Expanded Image">
                     <span class="close-btn">&times;</span>
@@ -501,7 +447,6 @@
                 </div>
             
                     <div class="row justify-content-center">
-                        <!-- Chef 1 -->
                         <div class="col-md-4 mb-4">
                             <div class="chef-card position-relative overflow-hidden">
                                 <img src="./assets/imgs/team01.png" alt="Rosalina Dumble" class="img-fluid rounded">
@@ -512,7 +457,6 @@
                             </div>
                         </div>
             
-                        <!-- Chef 2 -->
                         <div class="col-md-4 mb-4">
                             <div class="chef-card position-relative overflow-hidden">
                                 <img src="./assets/imgs/team02.png" alt="Troma D. Miranda" class="img-fluid rounded">
@@ -537,101 +481,177 @@
                 </div>
             </section>
             
+
+
+            <section id="media" class="media-section pt-200 pb-200" style="background-image:url('./assets/imgs/video-bg.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 text-center">
+                            <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="video-link mt-100 mb-100">
+                                <img src="./assets/imgs/play.png" alt="Play Button" class="media-play-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="news-feeds-section py-5">
+                <div class="container">
+                    <div class="section-title text-center mb-4 meow-news">
+                        <h3>BLOG</h3>
+                        <h2>NEWS FEEDS</h2>
+                        <div class="divider"></div>
+
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="news-card">
+                                <div class="news-image">
+                                    <img src="./assets/imgs/blog_img01.jpg" alt="News Image 3">
+                                    <span class="news-category">FOOD</span>
+                                </div>
+                                <div class="p-3">
+                                    <p class="news-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> 4th June 2020</span> &nbsp;|&nbsp; 
+                                        <span><i class="fas fa-user"></i> By Admin</span>
+                                    </p>
+                                    <h3 class="news-title">RESTAURANTS IN THIS CITY RIGHT NOW. SO WE SCOUR THE CITY.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="news-card">
+                                <div class="news-image">
+                                    <img src="./assets/imgs/blog_img02.jpg" alt="News Image 3">
+                                    <span class="news-category">FOOD</span>
+                                </div>
+                                <div class="p-3">
+                                    <p class="news-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> 4th June 2020</span> &nbsp;|&nbsp; 
+                                        <span><i class="fas fa-user"></i> By Admin</span>
+                                    </p>
+                                    <h3 class="news-title">RESTAURANTS IN THIS CITY RIGHT NOW. SO WE SCOUR THE CITY.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="news-card">
+                                <div class="news-image">
+                                    <img src="./assets/imgs/blog_img01.jpg" alt="News Image 3">
+                                    <span class="news-category">FOOD</span>
+                                </div>
+                                <div class="p-3">
+                                    <p class="news-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> 4th June 2020</span> &nbsp;|&nbsp; 
+                                        <span><i class="fas fa-user"></i> By Admin</span>
+                                    </p>
+                                    <h3 class="news-title">RESTAURANTS IN THIS CITY RIGHT NOW. SO WE SCOUR THE CITY.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            
         </main>
         
+        <footer>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-3 footer-left">
+                        <div class="footer-logo">
+                            <img src="./assets/imgs/logo.png" alt="Footer Logo">
+                        </div>
+                        <div class="below-logo">
+                            <span class="gray-text">
+                                Upgrade your style with our curated sets. Choose confidence, embrace your unique look.
+                            </span>
+                        </div>
+                        <div class="social-media">
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
         
-        <div class="Filler">
-            <p>salam</p>  
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-            <p>salam</p>  
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-            <p>salam</p>  
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-    
-            <p>salam</p>  
-            
-    
-      </div>
+                    <div class="col-md-6 footer-middle">
+                        <div class="row">
+                            <h6 >Opening Hours</h6>
+                            <div class="col-md-4 footer-column">
+                               
+                                <span href="#">MONDAY
+                                    9.00 - 22.00</span>
+                                <span href="#">TUESDAY
+                                    9.00 - 22.00</span>
+                                <span href="#">WENDSDAY
+                                    9.00 - 22.00</span>
+                                <span href="#">THURSDAY
+                                    9.00 - 22.00</span>
+                                
+                                <span >FRIDAY
+                                    9.00 - 22.00</span>
+                            </div>
+                            <div class="col-md-4 footer-column">
+                                <span href="#">SATURDAY
+                                    11.00 - 00.00</span>
+                                    <span href="#">SUNDAY
+                                        11.00 - 00.00</span>
+                            </div>
 
+                            <div class="col-md-4 footer-column">
+                                <a href="#">My Account</a>
+                                <a href="#">Reservations</a>
+                                <a href="#">Menu</a>
+                                <a href="#">Newsletter</a>
+                                <a href="#">Blog</a>
+                                <a href="#">About Us</a>
+                            </div>
+                        </div>
+                    </div>
+        
+<div class="col-md-3 footer-right">
+    <div class="newsletter-text">
+        <h5>Newsletter</h5>
+        <span class="gray-text">
+            Sign up and receive the latest tips via email.
+        </span>
+    </div>
+    <div class="email">
+        <div class="write-email">
+            <span class="gray-text">Write your email <span style="color: red !important;">*</span></span>
+        </div>
+        <div class="email-inputbutton" id="newsletter-form">
+            <div class="input-group mb-3 email-input">
+                <i class="fas fa-envelope"></i>
+                <input type="text" id="newsletter-email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+            </div>
+            <div class="email-button">
+                <button id="subscribe-button">Send Email</button>
+            </div>
+        </div>
+        <div id="subscription-message" class="d-none">
+            <p class="text-success">Subscribed to the newsletter!</p>
+        </div>
+        <div id="error-message" class="d-none">
+            <p class="text-danger">Please enter a valid email address!</p>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+        
+        </footer>
+        
+
+
+     
+
+    
       <div class="lightbox" id="lightbox">
         <button class="lightbox-close" id="lightboxClose">&times;</button>
         <img src="./assets/imgs/foodpichome1.png" alt="Expanded Food Image" id="lightboxImg">

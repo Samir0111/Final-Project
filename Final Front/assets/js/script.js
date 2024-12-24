@@ -78,31 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const foodImages = document.querySelectorAll(".food-img");
-//     const lightbox = document.getElementById("lightbox");
-//     const lightboxImg = document.getElementById("lightboxImg");
-//     const lightboxClose = document.getElementById("lightboxClose");
-
-//     foodImages.forEach((img) => {
-//         img.addEventListener("click", () => {
-//             const fullSrc = img.getAttribute("data-src");
-//             lightboxImg.setAttribute("src", fullSrc);
-//             lightbox.classList.add("active");
-//         });
-//     });
-
-//     lightboxClose.addEventListener("click", () => {
-//         lightbox.classList.remove("active");
-//     });
-
-//     lightbox.addEventListener("click", (e) => {
-//         if (e.target === lightbox) {
-//             lightbox.classList.remove("active");
-//         }
-//     });
-// });
-
 function openImageFullscreen(img) {
     const modal = document.getElementById("fullscreenModal");
     const fullscreenImg = document.getElementById("fullscreenImage");
@@ -114,3 +89,20 @@ function closeImageFullscreen() {
     const modal = document.getElementById("fullscreenModal");
     modal.style.display = "none";
 }
+document.getElementById("subscribe-button").addEventListener("click", function () {
+    const emailInput = document.getElementById("newsletter-email").value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+
+    if (emailRegex.test(emailInput)) {
+        document.getElementById("newsletter-form").classList.add("d-none");
+
+        document.getElementById("subscription-message").classList.remove("d-none");
+
+        document.getElementById("error-message").classList.add("d-none");
+    } else {
+        document.getElementById("error-message").classList.remove("d-none");
+
+
+        document.getElementById("subscription-message").classList.add("d-none");
+    }
+});
