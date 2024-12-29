@@ -70,3 +70,4 @@ document.getElementById("subscribe-button").addEventListener("click", function (
         document.getElementById("subscription-message").classList.add("d-none");
     }
 });
+ 

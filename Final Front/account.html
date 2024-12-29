@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/css/pikaday.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/css/account.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light" style="background-color: transparent;">
+            <div id="header-sticky" class="container">
+                    <div class="col-xl-2 col-lg-2">
+                        <a class="navbar-brand header-logo" href="#">
+                            <img src="./assets/imgs/logo.png" width="30" height="30" alt="">
+                        </a>
+                    </div>  
+                    <div class="navigator">
+                        <ul class="navbar-nav d-flex flex-row ">
+                            <li class="nav-item px-3"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item px-3"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item px-3"><a class="nav-link" href="./menu.html">Menu</a></li>
+                            <li class="nav-item px-3"><a class="nav-link" href="#">Blog</a></li>
+                            <li class="nav-item px-3"><a class="nav-link" href="#">Contact</a></li>
+                            <li class="nav-item px-3 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-3 button-nav">
+                                <a class="btn book-seat rounded-pill px-4 py-2" href="#">BOOK SEAT</a>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+             <div class="menu-toggle d-lg-none" id="menuToggle">
+                <span class="menu-icon" id="menuIcon">&#9776;</span>
+            </div>
+            <div class="side-menu" id="sideMenu">
+                <div class="menu-toggle d-lg-none" id="menuToggle">
+                    <span class="close-icon" id="closeIcon">&times;</span>
+                </div>
+                <ul class="side-menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" id="accountToggle" class="dropdown-toggle">
+                            <span>Account</span>
+                        </a>
+                        <ul class="dropdown-list d-none" id="accountDropdown">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </li>
+                    <button class="button-78" role="button">BOOK SEAT</button>
+                </ul>
+            </div>
+            <div class="overlay" id="overlay"></div>
+        </nav>
+    </header>
+
+<main>
+
+  <section class="headerbottomabout-section" style="background-image: url('./assets/imgs/test-bg.png');">
+    <div class="container text-center">
+        <div class="headerbottomabout-content">
+            <h1 class="headerbottomabout-title">Account</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <a href="#" class="active">Account</a>
+            </nav>
+        </div>
+    </div>
+</section>
+    
+<section class="current-account-info">
+    <div class="container">
+        <h2 class="section-title">Your Account Information</h2>
+        <div class="info-box">
+            <div class="info-item">
+                <h4>Email:</h4>
+                <p>abcde@example.com</p>
+            </div>
+            <div class="info-item">
+                <h4>Username:</h4>
+                <p>xyz123</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="change-password-section">
+    <div class="container">
+        <h2 class="section-title">Change Password</h2>
+        <p class="section-subtitle">Ensure your account is protected by changing your password regularly.</p>
+        <form class="password-form">
+            <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="current-password" name="current-password" placeholder="Enter your current password" required>
+                    <i class="toggle-password fas fa-eye" data-target="#current-password"></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="new-password" name="new-password" placeholder="Enter your new password" required>
+                    <i class="toggle-password fas fa-eye" data-target="#new-password"></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm New Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your new password" required>
+                    <i class="toggle-password fas fa-eye" data-target="#confirm-password"></i>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Change Password</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+</main>
+   
+    
+<footer>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3 footer-left">
+                <div class="footer-logo">
+                    <img src="./assets/imgs/logo.png" alt="Footer Logo">
+                </div>
+                <div class="below-logo">
+                    <span class="gray-text">
+                        Upgrade your style with our curated sets. Choose confidence, embrace your unique look.
+                    </span>
+                </div>
+                <div class="social-media">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="col-md-6 footer-middle">
+                <div class="row">
+                    <h6 >Opening Hours</h6>
+                    <div class="col-md-4 footer-column">
+                       
+                        <span href="#">MONDAY
+                            9.00 - 22.00</span>
+                        <span href="#">TUESDAY
+                            9.00 - 22.00</span>
+                        <span href="#">WENDSDAY
+                            9.00 - 22.00</span>
+                        <span href="#">THURSDAY
+                            9.00 - 22.00</span>
+                        
+                        <span >FRIDAY
+                            9.00 - 22.00</span>
+                    </div>
+                    <div class="col-md-4 footer-column">
+                        <span href="#">SATURDAY
+                            11.00 - 00.00</span>
+                            <span href="#">SUNDAY
+                                11.00 - 00.00</span>
+                    </div>
+
+                    <div class="col-md-4 footer-column">
+                        <a href="#">My Account</a>
+                        <a href="#">Reservations</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Newsletter</a>
+                        <a href="#">Blog</a>
+                        <a href="#">About Us</a>
+                    </div>
+                </div>
+            </div>
+
+<div class="col-md-3 footer-right">
+<div class="newsletter-text">
+<h5>Newsletter</h5>
+<span class="gray-text">
+    Sign up and receive the latest tips via email.
+</span>
+</div>
+<div class="email">
+<div class="write-email">
+    <span class="gray-text">Write your email <span style="color: red !important;">*</span></span>
+</div>
+<div class="email-inputbutton" id="newsletter-form">
+    <div class="input-group mb-3 email-input">
+        <i class="fas fa-envelope"></i>
+        <input type="text" id="newsletter-email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+    </div>
+    <div class="email-button">
+        <button id="subscribe-button">Send Email</button>
+    </div>
+</div>
+<div id="subscription-message" class="d-none">
+    <p class="text-success">Subscribed to the newsletter!</p>
+</div>
+<div id="error-message" class="d-none">
+    <p class="text-danger">Please enter a valid email address!</p>
+</div>
+</div>
+</div>
+
+            </div>
+        </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/account.js"></script>
+    <script src="https://kit.fontawesome.com/0094c222b8.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

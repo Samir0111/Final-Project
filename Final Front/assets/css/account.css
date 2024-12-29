@@ -619,11 +619,6 @@ header.sticky {
 }
 
 
-
-
-
-
-
 /* HEADERBOTTOMABOUT */
 
 .headerbottomabout-section {
@@ -705,732 +700,6 @@ header.sticky {
 
     .headerbottomabout-content .breadcrumb {
         font-size: 14px;
-    }
-}
-
-
-
-
-/* about us */
-.about-us-section {
-    background-color: #111;
-    padding: 5vw 0;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw;
-    align-items: flex-start; /* Align items at the top */
-    position: relative;
-}
-
-.about-us-image {
-    flex: 0 1 35%;
-    margin-right: 2%; /* Add some spacing between image and text */
-}
-
-.about-us-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.about-us-content {
-    flex: 0 1 50%; /* Take up more space for the text */
-    padding: 0 2vw;
-}
-
-.about-us-content h3 {
-    color: #ffc107;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-family: "Poppinsfour";
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.about-us-content h3 .line {
-    display: inline-block;
-    background-color: #ffc107;
-    height: 2px;
-    width: 50px;
-    margin-left: 10px;
-}
-
-.about-us-content h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: "Poppinsthree";
-    margin-bottom: 1rem;
-}
-
-.about-us-content .subtitle {
-    font-size: 1rem;
-    color: #b8b8b8;
-    margin-bottom: 1rem;
-    font-family: "Poppinstwo";
-}
-
-.about-us-content p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #b8b8b8;
-    font-family: "Poppins";
-    margin-bottom: 1.5rem;
-}
-
-.founder-info {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.founder-photo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.founder-details h4 {
-    margin: 0;
-    font-size: 1rem;
-    font-family: "Poppinsthree";
-    color: white;
-}
-
-.founder-details .founder-title {
-    display: block;
-    font-size: 0.9rem;
-    color: #ffc107;
-    font-family: "Poppinsfour";
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-us-image,
-    .about-us-content
-    {
-        flex: 1 1 100%;
-        margin: 1rem 0;
-    }
-
-    
-}
-
-
-/* aaaaa */
-
-@media (min-width: 1200px){
-    .meow-menu{
-        
-        position: relative;
-        left: 18% !important;
-    
-
-
-}
-  
-.headerbottomabout-content {
-    position: relative;
-    left: 35%;
-}   
-.section-title{
-    position: relative;
-    left: 33%;
-}
-.meow-news{
-    position: relative;
-    left: 38% !important;
-
-}
-
-
-.meow-chefs{
-    position: relative;
-    left: 40% !important;
-}
-}
-
-@media (min-width: 992px) and (max-width:1200px){
-    .section-title {
-       position: relative;
-       left: 27% !important;
-    
-    }
-
-      
-.headerbottomabout-content {
-    position: relative;
-    left: 31%;
-}
-    .meow-news{
-        
-        position: relative;
-        left: 35% !important;
-    
-
-
-}
-.meow-menu{
-        
-    position: relative;
-    left: 27% !important;
-
-
-
-}
-.meow-chefs{
-    position: relative;
-    left: 38% !important;
-}
-}
-
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .section-title {
-        position: relative;
-        left: 23% !important;
-     
-     }
-     .meow-news{
-        
-        position: relative;
-        left: 31% !important;
-    
-
-
-}
-     .meow-menu{
-        
-                position: relative;
-                left: 23% !important;
-            
-        
-        
-     }
-
-     
-.headerbottomabout-content {
-    position: relative;
-    left: 31%;
-}
-
-     .meow-chefs{
-        position: relative;
-        left: 33% !important;
-    }
-}
-
-
-
-/* > */
-.menu-section {
-    background-color: #111;
-    color: #fff;
-}
-.section-title h3 {
-    font-size: 1.5rem;
-    color: #ffc107;
-    margin-bottom: 0.5rem;
-}
-.section-title h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-.divider {
-    width: 50px;
-    height: 4px;
-    background-color: #ffc107;
-    margin: 0.5rem auto 1.5rem;
-}
-.menu-item img {
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-.menu-item img:hover {
-    transform: scale(1.05);
-}
-
-.fullscreen-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-.fullscreen-modal img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-}
-.fullscreen-modal .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* .meow-menu {
-position: relative;
-left: 23%;} */
-
-
-
-/* asasas */
-
-
-
-.our-chefs-section {
-    background-color: #111;
-    color: #fff;
-    padding: 60px 0;
-}
-
-.section-title h3 {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-}
-
-.section-title h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.chef-card {
-    position: relative;
-    transition: transform 0.3s ease;
-    border-radius: 10px;
-    overflow: hidden;
-
-}
-
-@media (min-width: 1399px) {
-    .chef-card {
-        
-        position: relative;
-        left: 15%;
-    }
-  }
-
-.chef-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.chef-card:hover {
-    transform: scale(1.05);
-}
-
-.chef-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    padding: 20px;
-}
-
-.chef-card:hover .chef-overlay {
-    opacity: 1;
-}
-
-.chef-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.chef-role {
-    font-size: 1rem;
-    font-style: italic;
-}
-
-.media-section {
-    position: relative;
-    width: 100%;
-    padding: 200px 0;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.video-link {
-    position: relative;
-    left: 36vw;
-    
-}
-@media (min-width:768px) and (max-width: 992px) {
-    .video-link {
-        position: relative;
-        left: 170%;
-        
-    }
-    }
-
-    @media (max-width:768px) {
-        .video-link {
-            position: relative;
-            left: -9%;
-            
-        }
-    }
-
-    .video-link{
-        cursor: pointer;
-    }
-
-.media-play-icon {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-.mt-100 {
-    margin-top: 100px;
-}
-
-.mb-100 {
-    margin-bottom: 100px;
-}
-
-
-
-
-/* call to action */
-
-
-.call-to-action-section {
-    background-color: #111;
-    padding: 8vh 5vw;
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-@media (min-width: 992px) {
-    .cta-text-content{
-        position: relative;
-        left: 8%;
-    }
-}
-.cta-title {
-    font-size: 1.5vw;
-    color: #ffc107;
-    font-family: "Poppinsfour";
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-.cta-heading {
-    font-size: 3.5vw;
-    font-family: "Poppinsthree";
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
-.cta-subtitle {
-    font-size: 1.2vw;
-    font-family: "Poppinstwo";
-    color: #b8b8b8;
-    margin-bottom: 2rem;
-}
-
-.cta-left-content {
-    flex: 1 1 40%;
-}
-
-.cta-form-content {
-    flex: 1 1 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5vw;
-}
-
-.cta-form-item {
-    text-align: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cta-icon {
-    width: 3vw;
-    height: auto;
-    margin-bottom: 0.5rem;
-}
-
-.cta-form-label {
-    font-size: 1vw;
-    color: #b8b8b8;
-    font-family: "Poppinsfour";
-    margin: 0;
-}
-
-.cta-divider {
-    width: 0.2vw;
-    height: 3vw;
-    background-color: #333;
-    margin: 0 1vw;
-}
-
-.btn-yellow {
-    background-color: #ffc107;
-    padding: 1vw 3vw;
-    color: black;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: "Poppinsfour";
-    font-size: 1.2vw;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-yellow:hover {
-    background-color: #f37021;
-    color: white;
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
-}
-
-.cta-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2vw;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    .call-to-action-section {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 6vh 3vw;
-    }
-
-    .cta-left-content {
-        margin-bottom: 3vh;
-        flex: 1 1 100%;
-    }
-
-    .cta-form-content {
-        flex-direction: column;
-        gap: 2vh;
-        flex: 1 1 100%;
-    }
-
-    .cta-form-item {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .cta-icon {
-        width: 6vw;
-    }
-
-    .cta-form-label {
-        font-size: 1.5vw;
-    }
-
-    .cta-divider {
-        height: 0.2vw;
-        width: 100%;
-        margin: 1vh 0;
-    }
-
-    .btn-yellow {
-        font-size: 2.5vw;
-        padding: 1.5vw 4vw;
-    }
-}
-
-@media (max-width: 576px) {
-    .cta-heading {
-        font-size: 5vw;
-    }
-
-    .cta-title {
-        font-size: 3vw;
-    }
-
-    .cta-form-label {
-        font-size: 2vw;
-    }
-
-    .cta-icon {
-        width: 8vw;
-    }
-}
-
-
-/* media */
-
-.media-section {
-    position: relative;
-    width: 100%;
-    padding: 200px 0;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.video-link {
-    position: relative;
-    left: 36vw;
-    
-}
-@media (min-width:768px) and (max-width: 992px) {
-    .video-link {
-        position: relative;
-        left: 170%;
-        
-    }
-    }
-
-    @media (max-width:768px) {
-        .video-link {
-            position: relative;
-            left: -9%;
-            
-        }
-    }
-
-    .video-link{
-        cursor: pointer;
-    }
-
-.media-play-icon {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-.mt-100 {
-    margin-top: 100px;
-}
-
-.mb-100 {
-    margin-bottom: 100px;
-}
-
-/* testimonials */
-
-
-.testimonials-section {
-    background-color: #111; /* Match background color */
-    padding: 5rem 2rem;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-}
-
-.section-title {
-    text-align: center;
-    
-    margin-bottom: 2rem;
-
-}
-
-.section-title h3 {
-    font-size: 1.5rem;
-    color: #ffc107; /* Match yellow accent color */
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-}
-
-.section-title h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.section-title .divider {
-    width: 6rem;
-    height: 0.25rem;
-    background: #ffc107;
-    margin: 0.5rem auto 1.5rem;
-}
-
-.testimonials-carousel {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    position: relative;
-    left: 1%;
-}
-
-.testimonial-card {
-    background-color: #222;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    width: 25rem;
-    text-align: center;
-    position: relative;
-    margin-bottom: 2rem; /* Add spacing between rows */
-}
-
-.testimonial-card .stars {
-    color: #ffc107; /* Star color */
-    margin-bottom: 1rem;
-}
-
-.testimonial-card .stars span {
-    font-size: 1.5rem;
-    margin: 0 0.2rem;
-}
-
-.testimonial-card .testimonial-text {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #b8b8b8;
-    margin-bottom: 1.5rem;
-}
-
-.testimonial-card .testimonial-author {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .testimonials-carousel {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center;
-    }
-
-    .testimonial-card {
-        width: 100%; /* Take full width on smaller screens */
-        margin-bottom: 1rem;
     }
 }
 
@@ -1623,4 +892,174 @@ footer {
       left: -5%;
     }
   }
-  
+
+
+  .change-password-section {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.change-password-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.change-password-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #ffc107;
+}
+
+.change-password-section .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #b8b8b8;
+}
+
+.password-form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.password-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.password-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.password-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.password-form .form-group input:focus {
+    border-color: #ffc107;
+}
+
+.password-form .btn-submit {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffc107;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.password-form .btn-submit:hover {
+    background-color: #e6a307;
+}
+
+@media (max-width: 768px) {
+    .change-password-section .container {
+        padding: 0 20px;
+    }
+
+    .password-form .btn-submit {
+        font-size: 0.9rem;
+    }
+}
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px; /* Space for the eye icon */
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #ffc107;
+}
+.current-account-info {
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.info-box {
+    display: inline-block;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.info-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.info-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-box {
+        padding: 15px;
+    }
+
+    .info-item h4 {
+        font-size: 14px;
+    }
+
+    .info-item p {
+        font-size: 12px;
+    }
+}

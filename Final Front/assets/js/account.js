@@ -70,3 +70,19 @@ document.getElementById("subscribe-button").addEventListener("click", function (
         document.getElementById("subscription-message").classList.add("d-none");
     }
 });
+ 
+
+
+
+
+//main
+
+    document.querySelectorAll('.toggle-password').forEach((toggle) => {
+        toggle.addEventListener('click', function () {
+            const targetInput = document.querySelector(this.dataset.target);
+            const type = targetInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            targetInput.setAttribute('type', type);
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+    });
