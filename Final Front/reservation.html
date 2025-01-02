@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Reservation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/css/pikaday.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="./assets/css/contact.css">
+        <link rel="stylesheet" href="./assets/css/reservation.css">
 </head>
 <body>
     <header>
@@ -75,53 +75,154 @@
   <section class="headerbottomabout-section" style="background-image: url('./assets/imgs/test-bg.png');">
     <div class="container text-center">
         <div class="headerbottomabout-content">
-            <h1 class="headerbottomabout-title">Contact</h1>
+            <h1 class="headerbottomabout-title">Reservation</h1>
             <nav class="breadcrumb">
                 <a href="index.html">Home</a>
                 <span>></span>
-                <a href="#" class="active">Contact</a>
+                <a href="#" class="active">Reservation</a>
             </nav>
         </div>
     </div>
 </section>
     
-<section class="contact-section">
-    <div class="container">
-        <div class="row">
-            <!-- Contact Form -->
-            <div class="col-md-6 contact-form">
-                <h2>Contact Us</h2>
-                <p>We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <input type="text" name="first_name" placeholder="First Name" required>
-                        <input type="text" name="last_name" placeholder="Last Name" required>
-                    </div>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
-                    <button type="submit" class="btn btn-yellow">Send Message</button>
-                </form>
-            </div>
-            
-            <!-- Contact Details -->
-            <div class="col-md-6 contact-details">
-                <h2>Visit Us</h2>
-                <p>Come and see us at our restaurant or call us for inquiries.</p>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Foodie Street, Gourmet City</li>
-                    <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
-                    <li><i class="fas fa-envelope"></i> contact@restaurant.com</li>
-                </ul>
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509424!2d-122.40055668468162!3d37.79360097975637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b320a9d%3A0x5678664ae6f59c24!2s123%20Foodie%20St%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2sin!4v1675063794231!5m2!1sen!2sin"
-                        width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+
+  <section class="call-to-action-section">
+    <div class="container d-flex align-items-center justify-content-between">
+    
+       
+
+        <!-- Right Content -->
+        <div class="cta-form-content d-flex align-items-center">
+            <!-- Check-In -->
+            <div class="cta-form-item position-relative">
+                <img src="./assets/imgs/booknow-icon1.png" alt="Check-In Icon" class="cta-icon">
+                <div>
+                    <p class="cta-form-label">CHECK IN</p>
+                    <input type="date" class="form-control cta-input" id="check-in-date">
                 </div>
+            </div>
+            <div class="cta-divider"></div>
+
+            <!-- Time -->
+            <div class="cta-form-item position-relative">
+                <img src="./assets/imgs/booknow-icon4.png" alt="Time Icon" class="cta-icon">
+                <div>
+                    <p class="cta-form-label">TIME</p>
+                    <select class="form-control cta-input" id="time-select">
+                        <option value="12:00 AM">12:00</option>
+                        <option value="1:00 PM">13:00</option>
+                        <option value="2:00 PM">14:00</option>
+                        <option value="3:00 PM">15:00</option>
+                        <option value="4:00 PM">16:00 </option>
+                        <option value="5:00 PM">17:00 </option>
+                        <option value="6:00 PM">18:00 </option>
+                        <option value="7:00 PM">19:00 </option>
+                        <option value="8:00 PM">20:00 </option>
+                        <option value="9:00 PM">21:00 </option>
+                        <option value="10:00 PM">22:00 </option>
+                    </select>
+                </div>
+            </div>
+            <div class="cta-divider"></div>
+
+            <!-- Guests -->
+            <div class="cta-form-item position-relative">
+                <img src="./assets/imgs/booknow-icon2.png" alt="Guests Icon" class="cta-icon">
+                <div>
+                    <p class="cta-form-label">GUESTS</p>
+                    <select class="form-control cta-input" id="guest-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Book Now Button -->
+            <div class="cta-button-container">
+                <button class="btn-yellow" id="bookNowBtn">BOOK NOW</button>
             </div>
         </div>
     </div>
+
+    <style>
+        .cta-input {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem;
+            font-size: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .cta-input:focus {
+            outline: none;
+            box-shadow: 0 0 5px #ffc107;
+        }
+
+        .cta-form-label {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            background: transparent;
+            border: 1px solid #555;
+        }
+
+        .form-control option {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .cta-button-container {
+            display: flex;
+            justify-content: center;
+            margin-left: 1rem;
+        }
+
+        .btn-yellow {
+            background-color: #ffc107;
+            padding: 0.7rem 2rem;
+            color: black;
+            border-radius: 50px;
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-yellow:hover {
+            background-color: #f37021;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+
+    <script>
+        document.getElementById('bookNowBtn').addEventListener('click', function () {
+            const checkInDate = document.getElementById('check-in-date').value;
+            const time = document.getElementById('time-select').value;
+            const guests = document.getElementById('guest-select').value;
+
+            if (!checkInDate || !time || !guests) {
+                alert('Please fill all the fields before booking.');
+            } else {
+                // Proceed with booking logic here
+                alert(`Booking confirmed for ${checkInDate} at ${time} for ${guests} guests.`);
+            }
+        });
+    </script>
 </section>
+
+
+
+
 
 </main>
    
@@ -224,7 +325,7 @@
 
 
 
-    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/reservation.js"></script>
     <script src="https://kit.fontawesome.com/0094c222b8.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>

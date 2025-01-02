@@ -896,105 +896,208 @@ footer {
 
 
 /* main */
+      #search-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+  
+      .search-container {
+        background-color: transparent;
+        padding: 2.2vw !important;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        border: 1px solid #4a4a4a;
+      }
+  
+      .search-title {
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 1.7vw;
+        text-align: center;
+        font-family: "Poppinsthree", sans-serif;
+      }
+  
+      .search-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4a4a4a;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+  
+      .search-input {
+        flex: 1;
+        background-color: #4a4a4a;
+        border: none;
+        color: #fff;
+        padding: 10px 15px;
+        font-size: 1rem;
+      }
+  
+      .search-input::placeholder {
+        color: #bbb;
+      }
+  
+      .search-button {
+        background-color: #ffc107;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+  
+      .search-button i {
+        color: #000;
+        font-size: 1.2rem;
+      }
 
-.menu-section {
-  padding: 60px 0;
+      #follow-us-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      .follow-us-container {
+        background-color: transparent;
+        border: 1px solid #4a4a4a;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+      }
+      
+      .follow-us-title {
+        color: #fff;
+        font-family: "Poppinsfour", sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      
+      .social-icons i {
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+      
+      .social-icons i:hover {
+        color: #ffc107;
+      }
+      
+
+
+
+      /* sa */
+
+      
+/* blog main section */
+/* Blog Main Section */
+.news-card {
+    background-color: #252526;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
 }
 
-.section-title h3 {
-  color: #ffc107;
-  font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
+.news-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.section-title h2 {
-  font-size: 3rem;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 1rem;
-  color: #fff;
+.news-image {
+    position: relative;
+    overflow: hidden;
 }
 
-.section-title .divider {
-  width: 60px;
-  height: 5px;
-  background-color: #ffc107;
-  margin: 0 auto;
+.news-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.filters {
-  margin-bottom: 2rem;
+.news-image:hover img {
+    transform: scale(1.1);
 }
 
-.filters .form-select {
-  background: #2b2b2b;
-  color: #fff;
-  border: 1px solid #ffc107;
+.news-category {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #ffc107;
+    color: #111;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
 }
 
-.filters .categories .btn {
-  border: 1px solid #ffc107;
-  color: #ffc107;
-}
-
-.filters .categories .btn:hover {
-  background-color: #ffc107;
-  color: #000;
-}
-
-.popular-meals {
-  margin-top: 3rem;
-}
-
-.food-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.meal-details h4 {
-  font-size: 1.3rem;
-  font-family: "Poppins", sans-serif;
-  color: #fff !important;
-}
-
-.meal-details p {
-  font-size: 0.9rem;
-  color: #726d6d !important;
-  margin: 0;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.meal-price .new-price {
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 20px;
-}
-
-.pagination .btn {
-  color: #ffc107;
-  border: 1px solid #ffc107;
-  font-size: 1rem;
-}
-
-.pagination .btn.active {
-  background-color: #ffc107;
-  color: #000;
-}
-
-@media (max-width: 768px) {
-  .food-img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .meal-details h4 {
-    font-size: 1rem;
-  }
-
-  .pagination .btn {
+.news-meta {
     font-size: 0.9rem;
-  }
+    color: #bbb;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.news-meta i {
+    color: #ffc107;
+}
+
+.news-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.news-description {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.star-rating {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating .star:hover,
+.star-rating .star.selected {
+  color: #ffc107;
+}
+
+.text-danger {
+  font-size: 0.9rem;
+  margin-top: -10px;
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.success-message {
+  font-size: 1.5rem;
+  color: #28a745;
+  text-align: center;
+  margin-top: 20px;
+  font-family:'Courier New', Courier, monospace;
 }
