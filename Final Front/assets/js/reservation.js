@@ -77,4 +77,37 @@ document.getElementById("subscribe-button").addEventListener("click", function (
 
 //main
 
-
+document.addEventListener('DOMContentLoaded', () => {
+    const decrementBtn = document.getElementById('decrement-btn');
+    const incrementBtn = document.getElementById('increment-btn');
+    const guestCountInput = document.getElementById('guest-count');
+    const bookNowBtn = document.getElementById('bookNowBtn');
+  
+    decrementBtn.addEventListener('click', () => {
+      let count = parseInt(guestCountInput.value);
+      if (count > 1) {
+        guestCountInput.value = count - 1;
+      }
+    });
+  
+    incrementBtn.addEventListener('click', () => {
+      let count = parseInt(guestCountInput.value);
+      if (count < 20) {
+        guestCountInput.value = count + 1;
+      }
+    });
+  
+    bookNowBtn.addEventListener('click', () => {
+      const checkInDate = document.getElementById('check-in-date').value;
+      const timeSelected = document.getElementById('time-select').value;
+      const guestCount = guestCountInput.value;
+  
+      if (!checkInDate) {
+        alert('Please select a check-in date.');
+        return;
+      }
+  
+      alert(`Reservation Confirmed:\nDate: ${checkInDate}\nTime: ${timeSelected}\nGuests: ${guestCount}`);
+    });
+  });
+  

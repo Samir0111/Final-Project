@@ -83,11 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const indicators = document.querySelector('#newsSlider .carousel-indicators');
     const slides = carouselInner.querySelectorAll('.carousel-item');
 
-    // Clear existing indicators (if any)
     indicators.innerHTML = '';
 
     slides.forEach((slide, index) => {
-        // Create indicator
         const button = document.createElement('button');
         button.type = 'button';
         button.dataset.bsTarget = '#newsSlider';
@@ -123,10 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
           star.addEventListener('click', function () {
             selectedRating = this.getAttribute('data-value');
 
-            // Remove selection from all stars
             stars.forEach(s => s.classList.remove('selected'));
 
-            // Highlight stars up to the clicked one
             for (let i = 0; i < selectedRating; i++) {
               stars[i].classList.add('selected');
             }
