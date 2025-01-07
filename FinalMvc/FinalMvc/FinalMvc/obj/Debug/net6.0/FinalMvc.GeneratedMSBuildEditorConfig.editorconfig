@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\FinalMvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/samir/OneDrive/Рабочий стол/Final-Project/FinalMvc/FinalMvc/FinalMvc/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/samir/OneDrive/Рабочий стол/Final-Project/FinalMvc/FinalMvc/FinalMvc/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

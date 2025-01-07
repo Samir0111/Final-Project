@@ -24,7 +24,7 @@
                             @if (User.Identity.IsAuthenticated)
                             {
                                 <form asp-controller="Account" asp-action="Logout" method="post" >
-                                <li><a class="dropdown-item" asp-controller="Account" asp-action="Changepassword">@User.Identity.Name</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="ChangePassword">@User.Identity.Name</a></li>
 
                                 <li><hr class="dropdown-divider"></li>
 

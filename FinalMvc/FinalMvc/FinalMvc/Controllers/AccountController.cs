@@ -8,6 +8,8 @@ using MimeKit.Text;
 using MimeKit;
 using MailKit.Net.Smtp;
 using FinalMvc.Services.Interfaces;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace FinalMvc.Controllers
@@ -19,7 +21,7 @@ namespace FinalMvc.Controllers
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IEmailService _emailService;
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager,  IEmailService emailService)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IEmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -76,13 +78,13 @@ namespace FinalMvc.Controllers
             await _userManager.AddToRoleAsync(user, Roles.SuperAdmin.ToString());
 
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            string url = Url.Action("ConfirmEmail", "Account", new {userId = user.Id, token}, Request.Scheme, Request.Host.ToString());
+            string url = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token }, Request.Scheme, Request.Host.ToString());
 
             string subject = "Rergister confirm email";
 
             string html = string.Empty;
 
-            using (StreamReader reader = new ("wwwroot/templates/verification.html"))
+            using (StreamReader reader = new("wwwroot/templates/verification.html"))
             {
                 html = reader.ReadToEnd();
             }
@@ -90,7 +92,7 @@ namespace FinalMvc.Controllers
             html = html.Replace("{{confirm-link}}", url);
 
 
-        _emailService.Send(user.Email, subject,html );
+            _emailService.Send(user.Email, subject, html);
 
             return RedirectToAction(nameof(VerifyEmail));
 
@@ -159,6 +161,21 @@ namespace FinalMvc.Controllers
 
 
 
+
+        //ChangePassword
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
         //[HttpGet]
         //public async Task<IActionResult>CreateRoles()
         //{
@@ -172,5 +189,4 @@ namespace FinalMvc.Controllers
         //    return Ok();
         //}
 
-    }
-}
+
