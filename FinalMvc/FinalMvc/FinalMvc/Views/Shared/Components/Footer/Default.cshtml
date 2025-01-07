@@ -1,0 +1,106 @@
+﻿@model Dictionary<string,string>
+
+
+<footer>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3 footer-left">
+                <div class="footer-logo">
+                    <img src="~/assets/imgs/logo.png" alt="Footer Logo">
+                </div>
+                <div class="below-logo">
+                    <span class="gray-text">
+                        Upgrade your style with our curated sets. Choose confidence, embrace your unique look.
+                    </span>
+                </div>
+                <div class="social-media">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="col-md-6 footer-middle">
+                <div class="row">
+                    <h6>Opening Hours</h6>
+                    <div class="col-md-4 footer-column">
+
+                        <span href="#">
+                            MONDAY
+                            9.00 - 22.00
+                        </span>
+                        <span href="#">
+                            TUESDAY
+                            9.00 - 22.00
+                        </span>
+                        <span href="#">
+                            WENDSDAY
+                            9.00 - 22.00
+                        </span>
+                        <span href="#">
+                            THURSDAY
+                            9.00 - 22.00
+                        </span>
+
+                        <span>
+                            FRIDAY
+                            9.00 - 22.00
+                        </span>
+                    </div>
+                    <div class="col-md-4 footer-column">
+                        <span href="#">
+                            SATURDAY
+                            11.00 - 00.00
+                        </span>
+                        <span href="#">
+                            SUNDAY
+                            11.00 - 00.00
+                        </span>
+                    </div>
+
+                    <div class="col-md-4 footer-column">
+                        <a href="./account.html">My Account</a>
+                        <a href="./reservation.html">Reservations</a>
+                        <a href="./menu.html">Menu</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="./blog.html">Blog</a>
+                        <a href="./about.html">About Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 footer-right">
+                <div class="newsletter-text">
+                    <h5>Newsletter</h5>
+                    <span class="gray-text">
+                        Sign up and receive the latest tips via email.
+                    </span>
+                </div>
+                <div class="email">
+                    <div class="write-email">
+                        <span class="gray-text">Write your email <span style="color: red !important;">*</span></span>
+                    </div>
+                    <div class="email-inputbutton" id="newsletter-form">
+                        <div class="input-group mb-3 email-input">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" id="newsletter-email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        </div>
+                        <div class="email-button">
+                            <button id="subscribe-button">Send Email</button>
+                        </div>
+                    </div>
+                    <div id="subscription-message" class="d-none">
+                        <p class="text-success">Subscribed to the newsletter!</p>
+                    </div>
+                    <div id="error-message" class="d-none">
+                        <p class="text-danger">Please enter a valid email address!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</footer>

@@ -1,0 +1,93 @@
+﻿
+
+
+
+
+
+
+
+
+@model LoginVM
+
+<div class="container mt-5 d-flex justify-content-center align-items-center" style="min-height: 100vh; padding-top: 80px;">
+    <div class="card p-5 shadow-lg" style="max-width: 400px; width: 100%; border: none;">
+        <h1 class="text-center mb-4" style="color: #ff8500; font-weight: bold;">Login</h1>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger" role="alert">
+                <div asp-validation-summary="All"></div>
+            </div>
+        }
+
+        <form asp-controller="Account" asp-action="Login" method="post">
+
+            <div class="form-group mb-4">
+                <label for="usernameOrEmail" class="form-label" style="color: gray; font-weight: bold;">Enter Your Email or Username</label>
+                <input asp-for="@Model.UsernameOrEmail" id="usernameOrEmail" type="text" class="form-control" style="border-color: #ff8500;">
+                <span asp-validation-for="@Model.UsernameOrEmail" class="text-danger" style="margin-top: 4px; display: block;"></span>
+            </div>
+
+            <div class="form-group mb-4">
+                <label for="password" class="form-label" style="color: gray; font-weight: bold;">Enter Your Password</label>
+                <div class="input-group">
+                    <input asp-for="@Model.Password" id="password" type="password" class="form-control" style="border-color: #ff8500;">
+                    <button class="btn btn-outline-secondary toggle-password" type="button" style="border: none; background: transparent;">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                </div>
+                <span asp-validation-for="@Model.Password" class="text-danger" style="margin-top: 4px; display: block;"></span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <a asp-controller="Account" asp-action="ForgotPassword" class="text-decoration-none" style="color: cornflowerblue;">Forgot Password</a>
+                <a asp-controller="Account" asp-action="Register" class="text-decoration-none" style="color: gray;">Don't have an account? Register</a>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-warning w-100" style="background-color: #ff8500; border: none; font-weight: bold;">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.toggle-password').forEach(button => {
+        button.addEventListener('click', function () {
+            const input = this.previousElementSibling;
+            const icon = this.querySelector('i');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    });
+</script>
+
+<style>
+    .input-group .form-control {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .input-group .btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .toggle-password {
+        position: relative;
+        left: 3% !important;
+        bottom: -1vw !important;
+    }
+    .input-group .btn i {
+        color: #ff8500;
+        font-size: 1.2em;
+    }
+</style>
+

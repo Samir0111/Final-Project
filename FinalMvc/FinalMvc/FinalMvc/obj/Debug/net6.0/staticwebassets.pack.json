@@ -1,0 +1,329 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\css\\about.css",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\css\\account.css",
+      "PackagePath": "staticwebassets\\assets\\css\\account.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\css\\blog.css",
+      "PackagePath": "staticwebassets\\assets\\css\\blog.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\css\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\css\\menu.css",
+      "PackagePath": "staticwebassets\\assets\\css\\menu.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\css\\reservation.css",
+      "PackagePath": "staticwebassets\\assets\\css\\reservation.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\fonts\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\about-us.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\about-us.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\ad-banner.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\ad-banner.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\avatar-founder.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\avatar-founder.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\blog_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\blog_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\booknow-icon1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\booknow-icon1.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\booknow-icon2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\booknow-icon2.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\booknow-icon4.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\booknow-icon4.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\features-bg.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\features-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\foodpichome1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\foodpichome1.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\foodpichome2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\foodpichome2.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\foodpichome3.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\foodpichome3.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\foodpichome4.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\foodpichome4.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\foodpichome5.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\foodpichome5.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\foodpichome6.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\foodpichome6.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\foodpichome7.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\foodpichome7.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\foodpichome8.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\foodpichome8.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\footer1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\footer1.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\footer2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\footer2.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\header-img-food.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\header-img-food.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\home-bg1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\home-bg1.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\home-discount.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\home-discount.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\home-icon1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\home-icon1.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\home-icon2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\home-icon2.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\home-icon3.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\home-icon3.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\line.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\line.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\meal-bg.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\meal-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\menu-01.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\menu-01.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\menu-02.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\menu-02.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\menu-03.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\menu-03.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\menu-04.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\menu-04.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\menu-05.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\menu-05.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\menu-06.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\menu-06.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\menu-07.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\menu-07.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\menu-08.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\menu-08.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\play.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\play.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\team-bg.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\team-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\team01.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\team01.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\team02.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\team02.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\team03.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\team03.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\test-bg.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\test-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\imgs\\video-bg.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\video-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\js\\about.js",
+      "PackagePath": "staticwebassets\\assets\\js\\about.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\js\\account.js",
+      "PackagePath": "staticwebassets\\assets\\js\\account.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\js\\blog.js",
+      "PackagePath": "staticwebassets\\assets\\js\\blog.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\js\\contact.js",
+      "PackagePath": "staticwebassets\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\js\\menu.js",
+      "PackagePath": "staticwebassets\\assets\\js\\menu.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\js\\reservation.js",
+      "PackagePath": "staticwebassets\\assets\\js\\reservation.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\templates\\Verification.html",
+      "PackagePath": "staticwebassets\\templates\\Verification.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FinalMvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.FinalMvc.props",
+      "PackagePath": "build\\FinalMvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.FinalMvc.props",
+      "PackagePath": "buildMultiTargeting\\FinalMvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.FinalMvc.props",
+      "PackagePath": "buildTransitive\\FinalMvc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
