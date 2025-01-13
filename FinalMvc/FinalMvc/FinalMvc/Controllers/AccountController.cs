@@ -161,8 +161,82 @@ namespace FinalMvc.Controllers
 
 
 
+        //[HttpGet]
+        //public async Task<IActionResult> CreateRoles()
+        //{
+        //    foreach (var role in Enum.GetValues(typeof(Roles)))
+        //    {
+        //        if (!await _roleManager.RoleExistsAsync(nameof(role)))
+        //        {
+        //            await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+        //        }
+        //    }
+        //    return Ok();
+        //}
 
         //ChangePassword
+
+
+
+        [HttpGet]
+        public async Task<IActionResult> ChangePassword()
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            // Store email and username in TempData
+            TempData["Email"] = user.Email;
+            TempData["Username"] = user.UserName;
+
+            return View();
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ChangePassword(ChangePasswordVM model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(); // If model state is invalid, redisplay the form
+            }
+
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+
+                // Keep the TempData values
+                //TempData["Email"] = user.Email;
+                //TempData["Username"] = user.UserName;
+
+                return View();
+            }
+
+            await _signInManager.SignInAsync(user, isPersistent: false);
+
+            TempData["SuccessMessage"] = "Your password has been updated successfully!";
+            return RedirectToAction("ChangePassword");
+        }
+
+
+
+
 
 
 
@@ -176,17 +250,5 @@ namespace FinalMvc.Controllers
 
 
 
-        //[HttpGet]
-        //public async Task<IActionResult>CreateRoles()
-        //{
-        //    foreach (var role in Enum.GetValues(typeof(Roles)))
-        //    {
-        //        if (!await _roleManager.RoleExistsAsync(nameof(role)))
-        //        {
-        //            await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
-        //        }
-        //    }
-        //    return Ok();
-        //}
 
 

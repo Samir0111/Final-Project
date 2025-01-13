@@ -18,7 +18,8 @@ namespace FinalMvc.ViewModels.Account
         [Compare("NewPassword", ErrorMessage = "Passwords do not match.")]
         public string ConfirmPassword { get; set; }
 
-        public AccountInfoVM AccountInfo { get; set; }
+
+    
 
     }
 }

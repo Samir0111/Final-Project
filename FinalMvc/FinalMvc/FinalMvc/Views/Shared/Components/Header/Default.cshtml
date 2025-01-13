@@ -5,13 +5,13 @@
     <nav class="navbar navbar-light" style="background-color: transparent;">
         <div id="header-sticky" class="container">
             <div class="col-xl-2 col-lg-2">
-                <a class="navbar-brand header-logo" href="#">
+                <a class="navbar-brand header-logo" asp-controller="Home" asp-action="Index">
                     <img src="~/assets/imgs/logo.png" width="30" height="30" alt="">
                 </a>
             </div>
             <div class="navigator">
                 <ul class="navbar-nav d-flex flex-row ">
-                    <li class="nav-item px-3"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li class="nav-item px-3"><a class="nav-link" href="./about.html">About Us</a></li>
                     <li class="nav-item px-3"><a class="nav-link" href="./menu.html">Menu</a></li>
                     <li class="nav-item px-3"><a class="nav-link" href="./blog.html">Blog</a></li>
