@@ -21,12 +21,15 @@ namespace FinalMvc.Controllers
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IEmailService _emailService;
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IEmailService emailService)
+        private readonly IEmailSenderService _emailSender;
+
+        public AccountController(IEmailSenderService emailSender, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IEmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
             _emailService = emailService;
+            _emailSender = emailSender;
         }
 
         [HttpPost]
@@ -236,6 +239,96 @@ namespace FinalMvc.Controllers
 
 
 
+        //ForgotPassword
+
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        // POST: ForgotPassword
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordVM model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            // Find user by email
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+            {
+                // Don't reveal that the user does not exist or is not confirmed
+                return RedirectToAction("ForgotPasswordConfirmation");
+            }
+
+            // Generate reset token
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            // Create reset link
+            var resetLink = Url.Action(
+                "ResetPassword",
+                "Account",
+                new { token, email = model.Email },
+                Request.Scheme);
+
+            // Send the email
+            await _emailSender.SendEmailAsync(model.Email, "Reset Password",
+                $"Please reset your password by clicking here: <a href='{resetLink}'>link</a>");
+
+            return RedirectToAction("ForgotPasswordConfirmation");
+        }
+
+        // GET: ForgotPasswordConfirmation
+        [HttpGet]
+        public IActionResult ForgotPasswordConfirmation()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
+
+        //reset
+
+        // POST: ResetPassword
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordVM model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                // Don't reveal that the user does not exist
+                return RedirectToAction("ResetPasswordConfirmation");
+            }
+
+            var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("ResetPasswordConfirmation");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return View(model);
+        }
+
+        // GET: ResetPasswordConfirmation
+        [HttpGet]
+        public IActionResult ResetPasswordConfirmation()
+        {
+            return View();
+        }
 
 
 

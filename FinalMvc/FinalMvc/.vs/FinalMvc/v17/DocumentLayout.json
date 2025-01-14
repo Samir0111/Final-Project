@@ -3,16 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\services\\emailsenderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\services\\emailsenderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\views\\account\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\account\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\viewmodels\\account\\resetpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\viewmodels\\account\\resetpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\services\\interfaces\\iemailsenderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\services\\interfaces\\iemailsenderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\viewmodels\\account\\forgotpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\viewmodels\\account\\forgotpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\wwwroot\\assets\\css\\account.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\wwwroot\\assets\\css\\account.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +86,189 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\appsettings.json",
+              "RelativeDocumentMoniker": "FinalMvc\\appsettings.json",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\appsettings.json",
+              "RelativeToolTip": "FinalMvc\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-14T00:13:20.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ForgotPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+              "RelativeToolTip": "FinalMvc\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T00:11:39.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VerifyEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Views\\Account\\VerifyEmail.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeToolTip": "FinalMvc\\Views\\Account\\VerifyEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T00:09:21.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "FinalMvc\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T00:06:25.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "FinalMvc\\Views\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T00:05:23.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "FinalMvc\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T00:05:07.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Program.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Program.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Program.cs",
+              "RelativeToolTip": "FinalMvc\\Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T23:58:51.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "FinalMvc\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\appsettings.Development.json",
+              "RelativeToolTip": "FinalMvc\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-13T23:56:33.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\EmailService.cs",
+              "RelativeToolTip": "FinalMvc\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T23:56:17.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\Interfaces\\IEmailService.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Services\\Interfaces\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\Interfaces\\IEmailService.cs",
+              "RelativeToolTip": "FinalMvc\\Services\\Interfaces\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T23:56:05.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EmailSenderService.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\EmailSenderService.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Services\\EmailSenderService.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\EmailSenderService.cs",
+              "RelativeToolTip": "FinalMvc\\Services\\EmailSenderService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T23:55:23.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IEmailSenderService.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\Interfaces\\IEmailSenderService.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Services\\Interfaces\\IEmailSenderService.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\Interfaces\\IEmailSenderService.cs",
+              "RelativeToolTip": "FinalMvc\\Services\\Interfaces\\IEmailSenderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T23:54:46.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResetPasswordVM.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\ViewModels\\Account\\ResetPasswordVM.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\ViewModels\\Account\\ResetPasswordVM.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\ViewModels\\Account\\ResetPasswordVM.cs",
+              "RelativeToolTip": "FinalMvc\\ViewModels\\Account\\ResetPasswordVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T23:53:00.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ForgotPasswordVM.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\ViewModels\\Account\\ForgotPasswordVM.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\ViewModels\\Account\\ForgotPasswordVM.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\ViewModels\\Account\\ForgotPasswordVM.cs",
+              "RelativeToolTip": "FinalMvc\\ViewModels\\Account\\ForgotPasswordVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T23:52:31.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "account.css",
               "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\assets\\css\\account.css",
               "RelativeDocumentMoniker": "FinalMvc\\wwwroot\\assets\\css\\account.css",
@@ -38,31 +276,30 @@
               "RelativeToolTip": "FinalMvc\\wwwroot\\assets\\css\\account.css",
               "ViewState": "AgIAAKkCAAAAAAAAAAAQwMMCAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-11T19:39:53.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T19:39:53.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "FinalMvc\\Views\\Account\\ChangePassword.cshtml",
               "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Account\\ChangePassword.cshtml",
               "RelativeToolTip": "FinalMvc\\Views\\Account\\ChangePassword.cshtml",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-11T18:44:49.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "FinalMvc\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Controllers\\AccountController.cs",
               "RelativeToolTip": "FinalMvc\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAAAOwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkBAAAAAAAAAAAAAC4BAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T18:46:38.204Z",
               "EditorCaption": ""
