@@ -256,9 +256,10 @@ namespace FinalMvc.Controllers
 
             // Find user by email
             var user = await _userManager.FindByEmailAsync(model.Email);
+
+            // Redirect to confirmation regardless of whether the user exists or is confirmed
             if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
             {
-                // Don't reveal that the user does not exist or is not confirmed
                 return RedirectToAction("ForgotPasswordConfirmation");
             }
 
@@ -272,12 +273,27 @@ namespace FinalMvc.Controllers
                 new { token, email = model.Email },
                 Request.Scheme);
 
-            // Send the email
-            await _emailSender.SendEmailAsync(model.Email, "Reset Password",
-                $"Please reset your password by clicking here: <a href='{resetLink}'>link</a>");
+            // Send email
+            try
+            {
+                // Load and customize the HTML template
+                string html = await System.IO.File.ReadAllTextAsync(
+                    Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/templates/ForgotPassword.html"));
+                html = html.Replace("{{reset-link}}", resetLink);
 
+                // Send the email using the email sender
+                await _emailSender.SendEmailAsync(model.Email, "Reset Your Password", html);
+            }
+            catch (Exception ex)
+            {
+                // Optionally log the exception for debugging purposes
+                Console.WriteLine($"Error sending email: {ex.Message}");
+            }
+
+            // Redirect to confirmation page
             return RedirectToAction("ForgotPasswordConfirmation");
         }
+
 
         // GET: ForgotPasswordConfirmation
         [HttpGet]
@@ -294,13 +310,31 @@ namespace FinalMvc.Controllers
 
 
         //reset
+        [HttpGet]
+        public IActionResult ResetPassword(string token, string email)
+        {
+            if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(email))
+            {
+                return BadRequest("Invalid password reset token or email.");
+            }
 
-        // POST: ResetPassword
+            var model = new ResetPasswordVM
+            {
+                Token = token,
+                Email = email
+            };
+
+            return View(); // Ensure you have a corresponding ResetPassword.cshtml view
+        }
+
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> ResetPassword(ResetPasswordVM model)
         {
             if (!ModelState.IsValid)
+            {
                 return View(model);
+            }
 
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null)
@@ -320,8 +354,13 @@ namespace FinalMvc.Controllers
                 ModelState.AddModelError(string.Empty, error.Description);
             }
 
-            return View(model);
+            //return View(model);
+
+            return RedirectToAction("ResetPasswordConfirmation");
+
         }
+
+
 
         // GET: ResetPasswordConfirmation
         [HttpGet]
@@ -329,11 +368,6 @@ namespace FinalMvc.Controllers
         {
             return View();
         }
-
-
-
-
-
 
 
     }

@@ -305,6 +305,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\script.js"
     },
     {
+      "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\templates\\ForgotPassword.html",
+      "PackagePath": "staticwebassets\\templates\\ForgotPassword.html"
+    },
+    {
       "Id": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\templates\\Verification.html",
       "PackagePath": "staticwebassets\\templates\\Verification.html"
     },

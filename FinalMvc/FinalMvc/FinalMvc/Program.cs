@@ -55,7 +55,16 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 
     options.SignIn.RequireConfirmedEmail = true;
+
+
+
+
+
+
+
+
 });
+
 
 
 //builder.Services.AddScoped<ISliderService, SliderService>();

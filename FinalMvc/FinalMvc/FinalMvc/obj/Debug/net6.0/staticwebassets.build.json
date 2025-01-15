@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OJh+puuUW71GllkhiaXnzUI7C4EqIcq4hY8MLtyszs8=",
+  "Hash": "9jiBarLxm+fT0iY0U2Fg+BbWuw12N3qco+OrF5ZhpsA=",
   "Source": "FinalMvc",
   "BasePath": "_content/FinalMvc",
   "Mode": "Default",
@@ -1459,6 +1459,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\templates\\ForgotPassword.html",
+      "SourceId": "FinalMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\",
+      "BasePath": "_content/FinalMvc",
+      "RelativePath": "templates/ForgotPassword.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\templates\\ForgotPassword.html"
     },
     {
       "Identity": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\wwwroot\\templates\\Verification.html",
