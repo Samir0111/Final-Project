@@ -3,19 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\services\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\services\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\services\\interfaces\\isliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\services\\interfaces\\isliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_H2UAR82_SQLEXPRESS/MVC_F\u0130NAL/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\finalmvc\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,59 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "FinalMvc\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "FinalMvc\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAJgBAAAAAAAAAAAAAKgBAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T01:27:56.1Z",
+              "Title": "SliderService.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\SliderService.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Services\\SliderService.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\SliderService.cs",
+              "RelativeToolTip": "FinalMvc\\Services\\SliderService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:02:51.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "RelativeDocumentMoniker": "FinalMvc\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "RelativeToolTip": "FinalMvc\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADQAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T00:42:52.369Z",
+              "Title": "ISliderService.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\Interfaces\\ISliderService.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Services\\Interfaces\\ISliderService.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Services\\Interfaces\\ISliderService.cs",
+              "RelativeToolTip": "FinalMvc\\Services\\Interfaces\\ISliderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:02:42.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "FinalMvc\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "FinalMvc\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFYAAAAAAAAAAAAAAA==",
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "FinalMvc\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T00:36:28.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.AspNetUsers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_H2UAR82_SQLEXPRESS/MVC_F\u0130NAL/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-16T00:35:08.223Z",
+              "WhenOpened": "2025-01-16T15:01:12.212Z",
               "EditorCaption": ""
             }
           ]

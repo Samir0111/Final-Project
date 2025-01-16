@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FinalMvc.Migrations
 {
-    public partial class AddeddRegisterAndLogin : Migration
+    public partial class AddedSlider : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

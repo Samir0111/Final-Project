@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FinalMvc.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250108200404_AddeddRegisterAndLogin")]
-    partial class AddeddRegisterAndLogin
+    [Migration("20250116145424_AddedSlider")]
+    partial class AddedSlider
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
