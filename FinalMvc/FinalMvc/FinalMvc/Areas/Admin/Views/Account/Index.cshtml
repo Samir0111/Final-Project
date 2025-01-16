@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<AppUser>
+@inject UserManager<AppUser> UserManager
+
+<div class="container mt-5">
+    <h1 class="text-center">User Roles</h1>
+
+    @if (User.IsInRole("SuperAdmin"))
+    {
+        <div class="create-area">
+            <a asp-action="AdjustRoles" class="btn btn-success">Adjust Roles</a>
+        </div>
+    }
+
+    <div class="table-responsive pt-3 mt-3">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.UserName</td>
+                        <td>@user.FullName</td>
+                        <td>@user.Email</td>
+                        <td>
+                            @{
+                                var roles = await UserManager.GetRolesAsync(user);
+                                <span>@string.Join(" ", roles)</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -78,7 +78,7 @@ namespace FinalMvc.Controllers
                 return View();
             }
 
-            await _userManager.AddToRoleAsync(user, Roles.SuperAdmin.ToString());
+            await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
 
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             string url = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token }, Request.Scheme, Request.Host.ToString());
