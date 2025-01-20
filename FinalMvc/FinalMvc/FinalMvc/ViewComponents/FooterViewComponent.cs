@@ -14,7 +14,10 @@ namespace FinalMvc.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            return await Task.FromResult(View(await _layoutService.GetAllSettingsAsync()));
+            var settings = await _layoutService.GetAllSettingsAsync();
+            return View(settings);
+
+            //return await Task.FromResult(View(await _layoutService.GetAllSettingsAsync()));
         }
     }
 }

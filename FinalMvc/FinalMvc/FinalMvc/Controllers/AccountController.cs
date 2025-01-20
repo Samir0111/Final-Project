@@ -78,7 +78,7 @@ namespace FinalMvc.Controllers
                 return View();
             }
 
-            await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
+            await _userManager.AddToRoleAsync(user, Roles.SuperAdmin.ToString());
 
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             string url = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token }, Request.Scheme, Request.Host.ToString());
@@ -164,18 +164,18 @@ namespace FinalMvc.Controllers
 
 
 
-        //[HttpGet]
-        //public async Task<IActionResult> CreateRoles()
-        //{
-        //    foreach (var role in Enum.GetValues(typeof(Roles)))
-        //    {
-        //        if (!await _roleManager.RoleExistsAsync(nameof(role)))
-        //        {
-        //            await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
-        //        }
-        //    }
-        //    return Ok();
-        //}
+        [HttpGet]
+        public async Task<IActionResult> CreateRoles()
+        {
+            foreach (var role in Enum.GetValues(typeof(Roles)))
+            {
+                if (!await _roleManager.RoleExistsAsync(nameof(role)))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+                }
+            }
+            return Ok();
+        }
 
         //ChangePassword
 

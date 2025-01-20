@@ -1,6 +1,7 @@
 ﻿
 using AutoMapper;
 using FinalMvc.Models;
+using FinalMvc.ViewModels.Admin.Slider;
 
 
 
@@ -13,7 +14,8 @@ namespace FinalMvc.Mappings
     {
         public MappingProfile()
         {
-   
+            CreateMap<Slider, SliderVM>().ReverseMap(); ;
+
         }
     }
 }

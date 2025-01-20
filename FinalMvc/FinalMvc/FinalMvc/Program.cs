@@ -66,16 +66,11 @@ builder.Services.Configure<IdentityOptions>(options =>
 });
 
 
-
 //builder.Services.AddScoped<ISliderService, SliderService>();
-//builder.Services.AddScoped<ISliderImageService, SliderImageService>();
-////builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ILayoutService, LayoutService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
-//services.AddTransient<IEmailSenderService, EmailSenderService>();
 builder.Services.AddScoped<IEmailSenderService, EmailSenderService>();
 
-//builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 
 

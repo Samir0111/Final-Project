@@ -15,13 +15,16 @@ namespace FinalMvc.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var model = ViewData.Model;
+            //var model = ViewData.Model;
+            //var settings = await _layoutService.GetAllSettingsAsync();
+
+
+            //ViewData["SettingsDictionary"] = settings;
+
+            //return View("Default", model);
+
             var settings = await _layoutService.GetAllSettingsAsync();
-
-
-            ViewData["SettingsDictionary"] = settings;
-
-            return View("Default", model);
+            return View(settings);
         }
     }
 }

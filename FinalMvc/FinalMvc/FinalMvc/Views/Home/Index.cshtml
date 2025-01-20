@@ -1,5 +1,5 @@
 ﻿
-
+@model HomeVM
 
 <main>
     <section class="slider-area">
@@ -7,30 +7,20 @@
             <img src="~/assets/imgs/home-bg1.png" alt="Background" class="slider-bg-img">
         </div>
         <div class="slider-section">
-            <div class="slider-wrapper">
-                <div class="slide active">
+            @foreach (var slider in Model.Sliders)
+            {
+                <div class="slide @(slider.IsMain ? "active" : "")">
                     <div class="slide-text">
-                        <h2>WE TAKE <br><span>PRIDE IN OUR FOOD</span></h2>
-                        <p>Made of fresh & premium ingredients</p>
+                        <h2>@slider.Title <br><span>@slider.SubTitle</span></h2>
+                        <p>@slider.Desc</p>
                         <a href="./about.html" class="btn-yellow">LEARN MORE</a>
                     </div>
                     <div class="slide-image">
-                        <img src="~/assets/imgs/header-img-food.png" alt="Food Circle" class="circle-image">
-                        <img src="~/assets/imgs/home-discount.png" alt="50% Discount" class="discount-image">
+                        <img src="~/assets/imgs/@slider.Image" alt="@slider.Title" class="circle-image">
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="slide-text">
-                        <h2>DISCOVER <br><span>OUR SPECIAL MENU</span></h2>
-                        <p>Delicious meals made with love</p>
-                        <a href="./about.html" class="btn-yellow">EXPLORE</a>
-                    </div>
-                    <div class="slide-image">
-                        <img src="~/assets/imgs/header-img-food.png" alt="Food Circle" class="circle-image">
-                        <img src="~/assets/imgs/home-discount.png" alt="50% Discount" class="discount-image">
-                    </div>
-                </div>
-            </div>
+            }
+
             <div class="slider-nav-arrows">
                 <button class="arrow-left">&#10094;</button>
                 <button class="arrow-right">&#10095;</button>

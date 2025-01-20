@@ -1,12 +1,14 @@
-﻿using FinalMvc.Models;
-using FinalMvc.ViewModels.Admin.Slider;
+﻿//using FinalMvc.Models;
+//using FinalMvc.ViewModels.Admin.Slider;
 
-namespace FinalMvc.Services.Interfaces
-{
-    public interface ISliderService
-    {
-        Task CreateAsync(Slider slider);
-        Task<List<SliderVM>> GetAllAsync();
-        Task<SliderVM> GetByIdAsync(int id);
-    }
-}
+//namespace FinalMvc.Services.Interfaces
+//{
+//    public interface ISliderService
+//    {
+//        Task CreateAsync(Slider slider);
+//        Task<List<SliderVM>> GetAllAsync();
+//        Task<SliderVM> GetByIdAsync(int id);
+//        Task UpdateAsync(SliderVM sliderVM);
+//        Task DeleteAsync(int id);
+//    }
+//}
