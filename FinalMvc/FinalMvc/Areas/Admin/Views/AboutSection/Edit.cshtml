@@ -1,0 +1,67 @@
+﻿@model AboutSectionVM
+
+<div class="container mt-5">
+    <h2 class="text-center">Edit About Section</h2>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-group">
+            <label asp-for="Title">Title</label>
+            <input asp-for="Title" type="text" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Subtitle">Subtitle</label>
+            <input asp-for="Subtitle" type="text" class="form-control" />
+            <span asp-validation-for="Subtitle" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Desc">Description</label>
+            <textarea asp-for="Desc" class="form-control"></textarea>
+            <span asp-validation-for="Desc" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" type="text" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Position">Position</label>
+            <input asp-for="Position" type="text" class="form-control" />
+            <span asp-validation-for="Position" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Current Main Image</label>
+            <div class="mb-3">
+                <img src="~/assets/imgs/@Model.Image" alt="Main Image" width="100" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ImageFile">Update Main Image</label>
+            <input asp-for="ImageFile" type="file" class="form-control" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Current Profile Picture</label>
+            <div class="mb-3">
+                <img src="~/assets/imgs/@Model.Pfp" alt="Profile Picture" width="50" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="PfpFile">Update Profile Picture</label>
+            <input asp-for="PfpFile" type="file" class="form-control" />
+            <span asp-validation-for="PfpFile" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
+    </form>
+</div>

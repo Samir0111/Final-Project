@@ -1,0 +1,67 @@
+﻿@model IEnumerable<AboutSectionVM>
+
+<div class="container mt-5">
+    <h1 class="text-center">About Sections</h1>
+    <div class="create-area mb-3">
+        <a asp-action="Create" class="btn btn-success">Add New Section</a>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Main Image</th>
+                    <th>Profile Picture</th>
+                    <th>Title</th>
+                    <th>Subtitle</th>
+                    <th>Description</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>IsMain</th>
+
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var about in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/assets/imgs/@about.Image" alt="Main Image" width="100" />
+                            </td>
+                            <td>
+                                <img src="~/assets/imgs/@about.Pfp" alt="Profile Picture" width="50" />
+                            </td>
+                            <td>@about.Title</td>
+                            <td>@about.Subtitle</td>
+                            <td>@about.Desc</td>
+                            <td>@about.Name</td>
+                            <td>@about.Position</td>
+                            <td>@(about.IsMain ? "Yes" : "No")</td>
+
+                            <td class="d-flex justify-content-around">
+                                <a asp-action="Detail" asp-route-id="@about.Id" class="btn btn-outline-primary">Detail</a>
+                                <a asp-action="Edit" asp-route-id="@about.Id" class="btn btn-outline-secondary">Edit</a>
+                                <form asp-action="Delete" asp-route-id="@about.Id" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                                <form asp-action="ChangeMainStatus" asp-route-id="@about.Id" method="post" class="d-inline">
+                                    <button type="submit" class="btn @(about.IsMain ? "btn-success btn-disabled-custom" : "btn-danger")">
+                                        Change Main Status
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="8" class="text-center">No sections found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

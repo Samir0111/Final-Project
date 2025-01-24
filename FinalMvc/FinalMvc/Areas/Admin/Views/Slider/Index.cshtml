@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SliderVM>
+
+<div class="container mt-5">
+    <h2 class="text-center">Sliders</h2>
+    <div class="create-area mb-4">
+        <a asp-action="Create" class="btn btn-success">Add New Slider</a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Subtitle</th>
+                    <th>Description</th>
+                    <th>Main Slider</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+           
+
+
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var slider in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/assets/imgs/@slider.Image" alt="Picture of @slider.Image" class="img-thumbnail" style="width: 80px; height:auto;">
+                            </td>
+                            <td>@slider.Title</td>
+                            <td>@slider.SubTitle</td>
+                            <td>@slider.Desc</td>
+                            <td>@(slider.IsMain ? "Yes" : "No")</td>
+                            <td class="d-flex justify-content-around">
+                                <a asp-action="Detail" asp-route-id="@slider.Id" class="btn btn-outline-primary">Detail</a>
+                                <a asp-action="Edit" asp-route-id="@slider.Id" class="btn btn-outline-secondary">Edit</a>
+                                <form asp-action="Delete" asp-route-id="@slider.Id" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                                <form asp-action="ChangeMainStatus" asp-route-id="@slider.Id" method="post" class="d-inline">
+                                    <button type="submit" class="btn @(slider.IsMain ? "btn-success btn-disabled-custom" : "btn-danger")">
+                                        Change Main Status
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center">No sliders found</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

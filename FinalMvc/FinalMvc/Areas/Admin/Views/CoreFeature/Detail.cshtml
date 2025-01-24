@@ -1,0 +1,15 @@
+﻿@model CoreFeatureVM
+
+<div class="container mt-5">
+    <h2 class="text-center">Feature Details</h2>
+    <div class="card mt-4">
+        <div class="card-body text-center">
+            <h4>@Model.Title</h4>
+            <p>@Model.Description</p>
+            <img src="~/assets/imgs/@Model.Image" alt="Feature Image" width="150" />
+        </div>
+    </div>
+    <div class="mt-3 text-center">
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

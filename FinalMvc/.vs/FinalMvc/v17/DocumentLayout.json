@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\areas\\admin\\views\\appointmentsection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\areas\\admin\\views\\appointmentsection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\areas\\admin\\views\\aboutsection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\areas\\admin\\views\\aboutsection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\areas\\admin\\controllers\\appointmentsectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\areas\\admin\\controllers\\appointmentsectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\areas\\admin\\controllers\\aboutsectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\areas\\admin\\controllers\\aboutsectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\areas\\admin\\views\\videopreview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\areas\\admin\\views\\videopreview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\areas\\admin\\controllers\\videopreviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\areas\\admin\\controllers\\videopreviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\viewmodels\\admin\\appointmentsection\\appointmentsectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\viewmodels\\admin\\appointmentsection\\appointmentsectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\viewmodels\\admin\\aboutsection\\aboutsectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\viewmodels\\admin\\aboutsection\\aboutsectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\models\\appointmentsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\models\\appointmentsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|c:\\users\\samir\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\final-project\\finalmvc\\finalmvc\\models\\aboutsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438C17E6-D4CB-4DD9-BD01-925267EADBF7}|FinalMvc\\FinalMvc.csproj|solutionrelative:finalmvc\\models\\aboutsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Views\\AppointmentSection\\Index.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Areas\\Admin\\Views\\AppointmentSection\\Index.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Views\\AppointmentSection\\Index.cshtml",
+              "RelativeToolTip": "FinalMvc\\Areas\\Admin\\Views\\AppointmentSection\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-24T00:28:10.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Views\\AboutSection\\Index.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Areas\\Admin\\Views\\AboutSection\\Index.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Views\\AboutSection\\Index.cshtml",
+              "RelativeToolTip": "FinalMvc\\Areas\\Admin\\Views\\AboutSection\\Index.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAADQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-24T00:21:27.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Views\\VideoPreview\\Index.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Areas\\Admin\\Views\\VideoPreview\\Index.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Views\\VideoPreview\\Index.cshtml",
+              "RelativeToolTip": "FinalMvc\\Areas\\Admin\\Views\\VideoPreview\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-24T00:21:16.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentSectionVM.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\ViewModels\\Admin\\AppointmentSection\\AppointmentSectionVM.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\ViewModels\\Admin\\AppointmentSection\\AppointmentSectionVM.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\ViewModels\\Admin\\AppointmentSection\\AppointmentSectionVM.cs",
+              "RelativeToolTip": "FinalMvc\\ViewModels\\Admin\\AppointmentSection\\AppointmentSectionVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T00:17:37.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AboutSectionVM.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\ViewModels\\Admin\\AboutSection\\AboutSectionVM.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\ViewModels\\Admin\\AboutSection\\AboutSectionVM.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\ViewModels\\Admin\\AboutSection\\AboutSectionVM.cs",
+              "RelativeToolTip": "FinalMvc\\ViewModels\\Admin\\AboutSection\\AboutSectionVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T00:17:31.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppointmentSection.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Models\\AppointmentSection.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Models\\AppointmentSection.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Models\\AppointmentSection.cs",
+              "RelativeToolTip": "FinalMvc\\Models\\AppointmentSection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T00:15:08.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AboutSection.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Models\\AboutSection.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Models\\AboutSection.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Models\\AboutSection.cs",
+              "RelativeToolTip": "FinalMvc\\Models\\AboutSection.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T00:15:02.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AboutSectionController.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Controllers\\AboutSectionController.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Areas\\Admin\\Controllers\\AboutSectionController.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Controllers\\AboutSectionController.cs",
+              "RelativeToolTip": "FinalMvc\\Areas\\Admin\\Controllers\\AboutSectionController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T00:12:30.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FinalMvc\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FinalMvc\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAIIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-24T00:10:30.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppointmentSectionController.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Controllers\\AppointmentSectionController.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Areas\\Admin\\Controllers\\AppointmentSectionController.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Controllers\\AppointmentSectionController.cs",
+              "RelativeToolTip": "FinalMvc\\Areas\\Admin\\Controllers\\AppointmentSectionController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T00:24:35.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VideoPreviewController.cs",
+              "DocumentMoniker": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Controllers\\VideoPreviewController.cs",
+              "RelativeDocumentMoniker": "FinalMvc\\Areas\\Admin\\Controllers\\VideoPreviewController.cs",
+              "ToolTip": "C:\\Users\\samir\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Final-Project\\FinalMvc\\FinalMvc\\Areas\\Admin\\Controllers\\VideoPreviewController.cs",
+              "RelativeToolTip": "FinalMvc\\Areas\\Admin\\Controllers\\VideoPreviewController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAAL8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T00:12:22.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

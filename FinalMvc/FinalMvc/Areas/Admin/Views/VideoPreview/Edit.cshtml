@@ -1,0 +1,32 @@
+﻿@model VideoPreviewVM
+
+<div class="container mt-5">
+    <h2 class="text-center">Edit Video</h2>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-group">
+            <label asp-for="YtLink">YouTube Link</label>
+            <input asp-for="YtLink" type="text" class="form-control" />
+            <span asp-validation-for="YtLink" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Current Preview Image</label>
+            <div class="mb-3">
+                <img src="~/assets/imgs/@Model.PreviewImage" alt="Preview" width="100" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Photo">Update Preview Image</label>
+            <input asp-for="Photo" type="file" class="form-control" />
+            <span asp-validation-for="Photo" class="text-danger"></span>
+        </div>
+
+    
+
+        <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
+    </form>
+</div>

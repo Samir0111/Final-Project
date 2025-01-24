@@ -1,0 +1,17 @@
+﻿@model AppointmentSectionVM
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-dark text-white">
+            <h2>@Model.Title</h2>
+            <h5 class="text-warning">@Model.Catch</h5>
+        </div>
+        <div class="card-body">
+            <h4>Subtitle:</h4>
+            <p>@Model.Subtitle</p>
+        </div>
+        <div class="card-footer text-center">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>

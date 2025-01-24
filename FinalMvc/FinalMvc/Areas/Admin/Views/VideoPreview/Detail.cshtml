@@ -1,0 +1,15 @@
+﻿@model VideoPreviewVM
+
+<div class="container mt-5">
+    <h2 class="text-center">Video Details</h2>
+    <div class="card mt-4">
+        <div class="card-body text-center">
+            <h4>Video Link: @Model.YtLink</h4>
+            <h5>Is Main: @Model.IsMain</h5>
+            <img src="~/assets/imgs/@Model.PreviewImage" alt="Preview" width="150" />
+        </div>
+    </div>
+    <div class="mt-3 text-center">
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

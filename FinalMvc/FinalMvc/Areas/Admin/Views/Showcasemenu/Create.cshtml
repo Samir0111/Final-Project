@@ -1,0 +1,14 @@
+﻿@model ShowcasemenuVM
+
+<div class="container mt-5">
+    <h2 class="text-center">Create Menu Item</h2>
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Photo">Upload Image</label>
+            <input asp-for="Photo" type="file" class="form-control" />
+            <span asp-validation-for="Photo" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Create</button>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
+    </form>
+</div>

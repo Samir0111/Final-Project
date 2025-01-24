@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CoreFeatureVM>
+
+<div class="container mt-5">
+    <h1 class="text-center">Core Features</h1>
+    <div class="create-area mb-3">
+        <a asp-action="Create" class="btn btn-success">Add New Feature</a>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var feature in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="~/assets/imgs/@feature.Image" alt="Feature Image" width="100" />
+                        </td>
+                        <td>@feature.Title</td>
+                        <td>@feature.Description</td>
+                        <td class="d-flex justify-content-around">
+                            <a asp-action="Detail" asp-route-id="@feature.Id" class="btn btn-outline-primary">Detail</a>
+                            <a asp-action="Edit" asp-route-id="@feature.Id" class="btn btn-outline-secondary">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@feature.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<BlogPostVM>
+
+<div class="container mt-5">
+    <h1 class="text-center">Blog Posts</h1>
+    <div class="create-area mb-3">
+        <a asp-action="Create" class="btn btn-success">Add New Blog Post</a>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>By</th>
+                    <th>Title</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var post in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/assets/imgs/@post.Image" alt="Blog Image" width="100" />
+                            </td>
+                            <td>@post.Category</td>
+                            <td>@post.Date</td>
+                            <td>@post.ByWho</td>
+                            <td>@post.Title</td>
+                            <td class="d-flex justify-content-around">
+                                <a asp-action="Detail" asp-route-id="@post.Id" class="btn btn-outline-primary">Detail</a>
+                                <a asp-action="Edit" asp-route-id="@post.Id" class="btn btn-outline-secondary">Edit</a>
+                                <form asp-action="Delete" asp-route-id="@post.Id" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center">No blog posts found</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<VideoPreviewVM>
+
+<div class="container mt-5">
+    <h1 class="text-center">Video Previews</h1>
+    <div class="create-area mb-3">
+        <a asp-action="Create" class="btn btn-success">Add New Video</a>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Preview Image</th>
+                    <th>Video Link</th>
+                    <th>Is Main</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                  @if (Model != null && Model.Any())
+                {
+                @foreach (var video in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="~/assets/imgs/@video.PreviewImage" alt="Preview" width="100" />
+                        </td>
+                        <td>@video.YtLink</td>
+                        <td>@(video.IsMain ? "Yes" : "No")</td>
+                      
+                        <td class="d-flex justify-content-around">
+                            <a asp-action="Detail" asp-route-id="@video.Id" class="btn btn-outline-primary">Detail</a>
+                            <a asp-action="Edit" asp-route-id="@video.Id" class="btn btn-outline-secondary">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@video.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                            <form asp-action="ChangeMainStatus" asp-route-id="@video.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn @(video.IsMain ? "btn-success btn-disabled-custom" : "btn-danger")">
+                                    Change Main Status
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+                }
+
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center">Nothing found</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

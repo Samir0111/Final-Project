@@ -1,0 +1,35 @@
+﻿@model SliderVM
+
+
+<div class="container mt-5">
+    <h2 class="text-center">Slider Details</h2>
+
+    <div class="form-group">
+        <label>Title:</label>
+        <p class="form-control">@Model.Title</p>
+    </div>
+
+    <div class="form-group">
+        <label>SubTitle:</label>
+        <p class="form-control">@Model.SubTitle</p>
+    </div>
+
+    <div class="form-group">
+        <label>Description:</label>
+        <p class="form-control">@Model.Desc</p>
+    </div>
+
+    <div class="form-group">
+        <label>Main Slider:</label>
+        <p class="form-control">@Model.IsMain ? "Yes" : "No"</p>
+    </div>
+
+    <div class="form-group">
+        <label>Image:</label>
+        <div>
+            <img src="@Model.Image" alt="Slider Image" class="img-fluid" />
+        </div>
+    </div>
+
+    <a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a>
+</div>
