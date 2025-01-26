@@ -48,6 +48,10 @@ namespace FinalMvc.Controllers
             var aboutSection = await _context.AboutSections.OrderByDescending(b => b.Id)
            .ToListAsync();
 
+            var testimonials = await _context.Testimonials
+        .Where(t => t.IsPublished) 
+        .ToListAsync();
+
 
             return View(new HomeVM
             {
@@ -65,7 +69,10 @@ namespace FinalMvc.Controllers
 
                 AppointmentSections = appointmentSection,
 
-                AboutSections = aboutSection
+                AboutSections = aboutSection,
+
+                 Testimonials = testimonials
+
 
             });
         }

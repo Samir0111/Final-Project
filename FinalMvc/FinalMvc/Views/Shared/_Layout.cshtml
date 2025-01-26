@@ -7,14 +7,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/css/pikaday.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
-     <link rel="stylesheet" href="~/assets/css/menu.css">  
+    @if (ViewContext.RouteData.Values["Controller"].ToString() == "Menu")
+    {
+        <link rel="stylesheet" href="~/assets/css/menu.css">
+    }
+     @if (ViewContext.RouteData.Values["Controller"].ToString() == "Home") {
     <link rel="stylesheet" href="~/assets/css/style.css">
+     }
     <link rel="stylesheet" href="~/assets/css/contact.css">
+     @if (ViewContext.RouteData.Values["Controller"].ToString() == "Blog") {
     <link rel="stylesheet" href="~/assets/css/blog.css">  
+     }
+    @if (ViewContext.RouteData.Values["Controller"].ToString() == "TestimonialPage")
+    {
+        <link rel="stylesheet" href="~/assets/css/blog.css">
+    }
+      @if (ViewContext.RouteData.Values["Controller"].ToString() == "Account") {
      <link rel="stylesheet" href="~/assets/css/account.css"> 
+      }
+       @if (ViewContext.RouteData.Values["Controller"].ToString() == "About") {
     <link rel="stylesheet" href="~/assets/css/about.css">
+       }
+        @if (ViewContext.RouteData.Values["Controller"].ToString() == "Reservation") {
     <link rel="stylesheet" href="~/assets/css/reservation.css"> 
-    
+        }
 
 </head>
 
@@ -24,6 +40,7 @@
 
 
 @RenderBody()
+    @RenderSection("Scripts", required: false)
 
 
 @await Component.InvokeAsync("Footer")

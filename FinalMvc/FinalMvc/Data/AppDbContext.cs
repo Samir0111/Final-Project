@@ -24,6 +24,9 @@
 
         public DbSet<AboutSection> AboutSections { get; set; }
         public DbSet<AppointmentSection> AppointmentSections { get; set; }
+        public DbSet<Testimonial> Testimonials { get; set; }
+
+
 
 
 

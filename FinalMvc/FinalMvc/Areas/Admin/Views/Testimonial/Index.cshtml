@@ -1,0 +1,53 @@
+﻿
+
+
+
+ @model IEnumerable<TestimonialVM>
+<div class="container mt-5">
+    <h1 class="text-center">Testimonials</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Comment</th>
+                    <th>Rating</th>
+                    <th>Is Published</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                  @if (Model != null && Model.Any())
+                {
+                @foreach (var testimonial in Model)
+                {
+                    <tr>
+                        <td>@testimonial.UserName</td>
+                        <td>@testimonial.Comment</td>
+                        <td>@testimonial.Rating</td>
+                        <td>@(testimonial.IsPublished ? "Yes" : "No")</td>
+                        <td class="d-flex justify-content-around">
+                            <a asp-action="Detail" asp-route-id="@testimonial.Id" class="btn btn-outline-primary">Detail</a>
+                            <form asp-action="Approve" asp-route-id="@testimonial.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-success" @(testimonial.IsPublished ? "disabled" : "")>
+                                    Approve
+                                </button>
+                            </form>
+                            <form asp-action="Delete" asp-route-id="@testimonial.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+                }
+
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center">No testimonials found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

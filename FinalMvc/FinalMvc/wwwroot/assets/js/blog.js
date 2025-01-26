@@ -103,64 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-      document.addEventListener('DOMContentLoaded', () => {
-        const stars = document.querySelectorAll('.star-rating .star');
-        const commentInput = document.getElementById('testimonial-comment');
-        const usernameInput = document.getElementById('testimonial-username');
-        const submitButton = document.getElementById('submit-testimonial');
 
-        const ratingError = document.getElementById('rating-error');
-        const commentError = document.getElementById('comment-error');
-        const usernameError = document.getElementById('username-error');
 
-        const testimonialContainer = document.getElementById('testimonial-container');
 
-        let selectedRating = 0;
 
-        stars.forEach(star => {
-          star.addEventListener('click', function () {
-            selectedRating = this.getAttribute('data-value');
 
-            stars.forEach(s => s.classList.remove('selected'));
 
-            for (let i = 0; i < selectedRating; i++) {
-              stars[i].classList.add('selected');
-            }
-            ratingError.classList.add('d-none');
-          });
-        });
 
-        const validateField = (input, errorElement, errorMessage) => {
-          if (!input.value.trim()) {
-            errorElement.textContent = errorMessage;
-            errorElement.classList.remove('d-none');
-            return false;
-          } else {
-            errorElement.classList.add('d-none');
-            return true;
-          }
-        };
-
-        const validateRating = () => {
-          if (selectedRating === 0) {
-            ratingError.classList.remove('d-none');
-            return false;
-          }
-          return true;
-        };
-
-        submitButton.addEventListener('click', (e) => {
-          e.preventDefault();
-
-          const isCommentValid = validateField(commentInput, commentError, 'Comment is required.');
-          const isUsernameValid = validateField(usernameInput, usernameError, 'Username is required.');
-          const isRatingValid = validateRating();
-
-          if (isCommentValid && isUsernameValid && isRatingValid) {
-            testimonialContainer.innerHTML = '<div class="success-message">SENT SUCCESSFULLY!</div>';
-          }
-        });
-
-        commentInput.addEventListener('input', () => validateField(commentInput, commentError, 'Comment is required.'));
-        usernameInput.addEventListener('input', () => validateField(usernameInput, usernameError, 'Username is required.'));
-      });

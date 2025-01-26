@@ -7,12 +7,10 @@ using FinalMvc.ViewModels.Admin.Slider;
 
 namespace FinalMvc.ViewModels
 {
-    public class HomeVM
+    public class AboutVM
     {
 
-        public List<Slider> Sliders { get; set; }
 
-        public List<Showcasemenu> Showcasemenus { get; set; }
 
 
         public List<Chefsteam> Chefsteams { get; set; }
@@ -20,15 +18,11 @@ namespace FinalMvc.ViewModels
 
         public List<VideoPreview> VideoPreviews { get; set; }
 
-        public List<BlogPost> BlogPosts { get; set; }
 
-        public List<CoreFeature> CoreFeatures { get; set; }
 
         public List<AppointmentSection> AppointmentSections { get; set; }
 
         public List<AboutSection> AboutSections { get; set; }
-        public List<Testimonial> Testimonials { get; set; }
-
 
 
     }
