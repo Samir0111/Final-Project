@@ -164,18 +164,35 @@ namespace FinalMvc.Controllers
 
 
 
-        [HttpGet]
-        public async Task<IActionResult> CreateRoles()
-        {
-            foreach (var role in Enum.GetValues(typeof(Roles)))
-            {
-                if (!await _roleManager.RoleExistsAsync(nameof(role)))
-                {
-                    await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
-                }
-            }
-            return Ok();
-        }
+        //[HttpGet]
+        //public async Task<IActionResult> CreateRoles()
+        //{
+        //    foreach (var role in Enum.GetValues(typeof(Roles)))
+        //    {
+        //        if (!await _roleManager.RoleExistsAsync(nameof(role)))
+        //        {
+        //            await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+        //        }
+        //    }
+        //    return Ok();
+        //}
+
+
+        //[Route("Account/CreateRoles")]
+        //[HttpGet]
+        //public async Task<IActionResult> CreateRoles()
+        //{
+        //    foreach (Roles role in Enum.GetValues(typeof(Roles)))
+        //    {
+        //        if (!await _roleManager.RoleExistsAsync(role.ToString()))
+        //        {
+        //            await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+        //        }
+        //    }
+        //    return Ok("Roles created successfully.");
+        //}
+
+
 
         //ChangePassword
 
@@ -199,43 +216,110 @@ namespace FinalMvc.Controllers
         }
 
 
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ChangePassword(ChangePasswordVM model)
         {
-            if (!ModelState.IsValid)
+            // Validate if CurrentPassword is provided
+            if (string.IsNullOrEmpty(model.CurrentPassword))
             {
-                return View(); // If model state is invalid, redisplay the form
+                ModelState.AddModelError("CurrentPassword", "Current password is required.");
             }
 
-            var user = await _userManager.GetUserAsync(User);
+            // Validate if NewPassword is provided
+            if (string.IsNullOrEmpty(model.NewPassword))
+            {
+                ModelState.AddModelError("NewPassword", "New password is required.");
+            }
 
+            // Validate if ConfirmPassword is provided
+            if (string.IsNullOrEmpty(model.ConfirmPassword))
+            {
+                ModelState.AddModelError("ConfirmPassword", "Please confirm your new password.");
+            }
+
+            // Check if NewPassword and ConfirmPassword match
+            if (!string.IsNullOrEmpty(model.NewPassword) && !string.IsNullOrEmpty(model.ConfirmPassword)
+                && model.NewPassword != model.ConfirmPassword)
+            {
+                ModelState.AddModelError("ConfirmPassword", "New password and confirmation password do not match.");
+            }
+
+            // If ModelState has errors, redisplay the form
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            // Get the current user
+            var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
                 return RedirectToAction("Login");
             }
 
-            var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+            // Validate if CurrentPassword is correct
+            var isCurrentPasswordValid = await _userManager.CheckPasswordAsync(user, model.CurrentPassword);
+            if (!isCurrentPasswordValid)
+            {
+                ModelState.AddModelError("CurrentPassword", "The current password is incorrect.");
+                return View(model);
+            }
 
+            // Attempt to change the password
+            var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
             if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
-
-                // Keep the TempData values
-                //TempData["Email"] = user.Email;
-                //TempData["Username"] = user.UserName;
-
-                return View();
+                return View(model);
             }
 
+            // Re-sign the user to refresh security context
             await _signInManager.SignInAsync(user, isPersistent: false);
 
+            // Set success message and redirect
             TempData["SuccessMessage"] = "Your password has been updated successfully!";
             return RedirectToAction("ChangePassword");
         }
+
+
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> ChangePassword(ChangePasswordVM model)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return View(); // If model state is invalid, redisplay the form
+        //    }
+
+        //    var user = await _userManager.GetUserAsync(User);
+
+        //    if (user == null)
+        //    {
+        //        return RedirectToAction("Login");
+        //    }
+
+        //    var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+
+        //    if (!result.Succeeded)
+        //    {
+        //        foreach (var error in result.Errors)
+        //        {
+        //            ModelState.AddModelError(string.Empty, error.Description);
+        //        }
+
+        //        return View();
+        //    }
+        //    await _signInManager.SignInAsync(user, isPersistent: false);
+
+        //    TempData["SuccessMessage"] = "Your password has been updated successfully!";
+        //    return RedirectToAction("ChangePassword");
+        //}
 
 
 
@@ -324,26 +408,55 @@ namespace FinalMvc.Controllers
                 Email = email
             };
 
-            return View(); // Ensure you have a corresponding ResetPassword.cshtml view
+            return View(); 
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ResetPassword(ResetPasswordVM model)
         {
-            if (!ModelState.IsValid)
+            // Check if all required fields are provided
+            if (string.IsNullOrEmpty(model.Password))
             {
+                TempData["ErrorMessage"] = "Password is required.";
+                return View(model);
+            }
+
+            if (model.Password.Length < 6)
+            {
+                TempData["ErrorMessage"] = "Password must be at least 6 characters long.";
+                return View(model);
+            }
+
+            if (!model.Password.Any(char.IsDigit))
+            {
+                TempData["ErrorMessage"] = "Password must contain at least one digit.";
+                return View(model);
+            }
+
+            if (!model.Password.Any(char.IsUpper))
+            {
+                TempData["ErrorMessage"] = "Password must contain at least one uppercase letter.";
+                return View(model);
+            }
+
+            if (!model.Password.Any(char.IsSymbol) && !model.Password.Any(char.IsPunctuation))
+            {
+                TempData["ErrorMessage"] = "Password must contain at least one special character.";
                 return View(model);
             }
 
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null)
             {
-                // Don't reveal that the user does not exist
-                return RedirectToAction("ResetPasswordConfirmation");
+                TempData["ErrorMessage"] = "Invalid email or reset token.";
+                return View(model);
             }
 
             var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+          
+
+
             if (result.Succeeded)
             {
                 return RedirectToAction("ResetPasswordConfirmation");
@@ -354,11 +467,43 @@ namespace FinalMvc.Controllers
                 ModelState.AddModelError(string.Empty, error.Description);
             }
 
-            //return View(model);
 
             return RedirectToAction("ResetPasswordConfirmation");
-
         }
+
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> ResetPassword(ResetPasswordVM model)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return View(model);
+        //    }
+
+        //    var user = await _userManager.FindByEmailAsync(model.Email);
+        //    if (user == null)
+        //    {
+        //        // Don't reveal that the user does not exist
+        //        return RedirectToAction("ResetPasswordConfirmation");
+        //    }
+
+        //    var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+        //    if (result.Succeeded)
+        //    {
+        //        return RedirectToAction("ResetPasswordConfirmation");
+        //    }
+
+        //    foreach (var error in result.Errors)
+        //    {
+        //        ModelState.AddModelError(string.Empty, error.Description);
+        //    }
+
+        //    //return View(model);
+
+        //    return RedirectToAction("ResetPasswordConfirmation");
+
+        //}
 
 
 

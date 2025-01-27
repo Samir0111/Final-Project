@@ -1,18 +1,15 @@
 using FinalMvc.Data;
-using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using FinalMvc.Services.Interfaces;
 using FinalMvc.Services;
-using AutoMapper;
-using FinalMvc.Mappings;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
 using FinalMvc.Models;
 using FinalMvc.Helpers;
 using MVC_Mini_project.Services;
+using FinalMvc.FluentValidation.TestimonialsValidation;
 
-
-
+using FluentValidation.AspNetCore;
+using FluentValidation;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -64,12 +61,16 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 
 });
+// FluentValidation
+builder.Services.AddFluentValidationAutoValidation(options => options.DisableDataAnnotationsValidation = true);
+builder.Services.AddValidatorsFromAssemblyContaining<TestimonialAddValidation>();
 
 
 //builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<ILayoutService, LayoutService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IEmailSenderService, EmailSenderService>();
+builder.Services.AddScoped<ITestimonialService, TestimonialService>();
 
 
 

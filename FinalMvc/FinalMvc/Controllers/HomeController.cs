@@ -1,5 +1,7 @@
 ﻿using FinalMvc.Data;
 using FinalMvc.Models;
+using FinalMvc.Services;
+using FinalMvc.Services.Interfaces;
 using FinalMvc.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,10 +11,14 @@ namespace FinalMvc.Controllers
     public class HomeController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ITestimonialService _testimonialService;
 
-        public HomeController(AppDbContext context)
+
+        public HomeController(AppDbContext context, ITestimonialService testimonialService)
         {
             _context = context;
+            _testimonialService = testimonialService;
+
         }
         public async Task<IActionResult> Index()
         {
@@ -71,7 +77,7 @@ namespace FinalMvc.Controllers
 
                 AboutSections = aboutSection,
 
-                 Testimonials = testimonials
+                 Testimonials = testimonials 
 
 
             });

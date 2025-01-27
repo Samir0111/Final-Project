@@ -1,0 +1,21 @@
+﻿@model FinalMvc.Models.Contact
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Contact Details</h1>
+
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="card-title"><strong>Full Name:</strong> @Model.FirstName @Model.LastName</h5>
+            <p class="card-text"><strong>Email:</strong> @Model.Email</p>
+            <p class="card-text"><strong>Message:</strong></p>
+            <p>@Model.Message</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            <form asp-action="Delete" asp-route-id="@Model.Id" method="post" class="d-inline">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>

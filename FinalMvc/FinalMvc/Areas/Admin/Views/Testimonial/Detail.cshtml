@@ -1,0 +1,20 @@
+﻿@model FinalMvc.ViewModels.TestimonialVM
+
+<div class="container mt-5">
+    <h2 class="text-center">Testimonial Details</h2>
+
+    <div class="card my-4">
+        <div class="card-header">
+            <h4>@Model.UserName</h4>
+            <span class="text-muted">Rating: @Model.Rating/5</span>
+        </div>
+        <div class="card-body">
+            <p>@Model.Comment</p>
+        </div>
+        <div class="card-footer">
+            <span class="text-muted">Published: @(Model.IsPublished ? "Yes" : "No")</span>
+        </div>
+    </div>
+
+    <a href="@Url.Action("Index", "Testimonial")" class="btn btn-primary">Back to Testimonials</a>
+</div>

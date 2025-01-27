@@ -10,10 +10,13 @@
     @if (ViewContext.RouteData.Values["Controller"].ToString() == "Menu")
     {
         <link rel="stylesheet" href="~/assets/css/menu.css">
+
+
     }
-     @if (ViewContext.RouteData.Values["Controller"].ToString() == "Home") {
+     @if (ViewContext.RouteData.Values["Controller"].ToString() == "Home" ) {
     <link rel="stylesheet" href="~/assets/css/style.css">
      }
+  
     <link rel="stylesheet" href="~/assets/css/contact.css">
      @if (ViewContext.RouteData.Values["Controller"].ToString() == "Blog") {
     <link rel="stylesheet" href="~/assets/css/blog.css">  
@@ -23,7 +26,11 @@
         <link rel="stylesheet" href="~/assets/css/blog.css">
     }
       @if (ViewContext.RouteData.Values["Controller"].ToString() == "Account") {
-     <link rel="stylesheet" href="~/assets/css/account.css"> 
+     <link rel="stylesheet" href="~/assets/css/account.css">
+        <link rel="stylesheet" href="~/assets/css/style.css">
+        <link rel="stylesheet" href="~/assets/css/about.css">
+
+
       }
        @if (ViewContext.RouteData.Values["Controller"].ToString() == "About") {
     <link rel="stylesheet" href="~/assets/css/about.css">
@@ -41,6 +48,8 @@
 
 @RenderBody()
     @RenderSection("Scripts", required: false)
+    @RenderSection("Styles", required: false)
+
 
 
 @await Component.InvokeAsync("Footer")
@@ -60,6 +69,10 @@
 
 
 
+    @section Scripts {
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.12/dist/jquery.validate.unobtrusive.min.js"></script>
+    }
 
 <script src="https://kit.fontawesome.com/0094c222b8.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>

@@ -25,6 +25,13 @@
         public DbSet<AboutSection> AboutSections { get; set; }
         public DbSet<AppointmentSection> AppointmentSections { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+
+        public DbSet<Food> Foods { get; set; }
+
+        public DbSet<FoodCategory> FoodCategories { get; set; }
+
+
 
 
 

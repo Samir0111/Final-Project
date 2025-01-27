@@ -1,92 +1,105 @@
-﻿using AutoMapper;
-using FinalMvc.Data;
-using FinalMvc.Models;
+﻿using FinalMvc.Models;
+using FinalMvc.Services;
+using FinalMvc.Services.Interfaces;
 using FinalMvc.ViewModels;
-using FinalMvc.ViewModels.Admin.CoreFeatures;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
-namespace FinalMvc.Controllers
+namespace FinalMvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "SuperAdmin, Admin")]
     public class TestimonialController : Controller
     {
-        private readonly AppDbContext _context;
-        private readonly IMapper _mapper;
+        private readonly ITestimonialService _testimonialService;
 
-        public TestimonialController(AppDbContext context, IMapper mapper)
+        public TestimonialController(ITestimonialService testimonialService)
         {
-            _context = context;
-            _mapper = mapper;
+            _testimonialService = testimonialService;
         }
 
+
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var testimonials = await _context.Testimonials.ToListAsync();
-            var testimonialVMs = _mapper.Map<IEnumerable<TestimonialVM>>(testimonials);
-            return View(testimonialVMs);
+            // Retrieve testimonials and map to ViewModel
+            var testimonials = await _testimonialService.GetTestimonalAsync();
+            var viewModel = testimonials.Select(t => new TestimonialVM
+            {
+                Id = t.Id,
+                UserName = t.UserName,
+                Comment = t.Comment,
+                Rating = t.Rating,
+                IsPublished = t.IsPublished
+            }).ToList();
+
+            return View(viewModel);
         }
 
+
+        [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
-            var testimonial = await _context.Testimonials.FirstOrDefaultAsync(t => t.Id == id);
-            if (testimonial == null) return NotFound();
+            // Fetch the testimonial by ID
+            var testimonial = await _testimonialService.GetTestimonialByIdAsync(id);
 
-            return View(testimonial);
+            if (testimonial == null)
+            {
+                return NotFound(); // Return a 404 page if the testimonial is not found
+            }
+
+            // Map the testimonial to the ViewModel (if needed)
+            var viewModel = new TestimonialVM
+            {
+                Id = testimonial.Id,
+                UserName = testimonial.UserName,
+                Comment = testimonial.Comment,
+                Rating = testimonial.Rating,
+                IsPublished = testimonial.IsPublished
+            };
+
+            return View(viewModel); // Pass the ViewModel to the Detail view
         }
 
         [HttpPost]
         public async Task<IActionResult> Approve(int id)
         {
-            var testimonial = await _context.Testimonials.FindAsync(id);
-            if (testimonial == null) return NotFound();
+            try
+            {
+                var testimonial = await _testimonialService.GetTestimonialByIdAsync(id);
+                if (testimonial == null)
+                {
+                    TempData["Error"] = "Testimonial not found.";
+                    return RedirectToAction("Index");
+                }
 
-            testimonial.IsPublished = true;
-            _context.Testimonials.Update(testimonial);
-            await _context.SaveChangesAsync();
+                testimonial.IsPublished = true; // Mark as published
+                await _testimonialService.UpdateTestimonialAsync(id, testimonial);
 
-            TempData["Success"] = "Testimonial approved successfully.";
+                TempData["Message"] = "Testimonial approved successfully.";
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = ex.Message;
+            }
+
             return RedirectToAction("Index");
         }
 
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            var testimonial = await _context.Testimonials.FindAsync(id);
-            if (testimonial == null) return NotFound();
-
-            _context.Testimonials.Remove(testimonial);
-            await _context.SaveChangesAsync();
-
-            TempData["Success"] = "Testimonial deleted successfully.";
-            return RedirectToAction("Index");
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Submit(TestimonialVM model)
-        {
-            if (!ModelState.IsValid)
+            try
             {
-                return View("Index", model); // Return the form with validation messages
+                await _testimonialService.DeleteTestimonialAsync(id);
+                TempData["Message"] = "Testimonial deleted successfully.";
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = ex.Message;
             }
 
-            // Save testimonial to database
-            var testimonial = new Testimonial
-            {
-                UserName = model.UserName,
-                Comment = model.Comment,
-                Rating = model.Rating,
-                IsPublished = false // Not published by default
-            };
-
-            _context.Testimonials.Add(testimonial);
-            await _context.SaveChangesAsync();
-
-            TempData["Success"] = "Your testimonial has been submitted and is awaiting approval.";
-            return RedirectToAction("Index"); // Redirect to the same page after submission
+            return RedirectToAction("Index");
         }
-
     }
 }

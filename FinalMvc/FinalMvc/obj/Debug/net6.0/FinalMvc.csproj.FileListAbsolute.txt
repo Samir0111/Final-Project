@@ -267,3 +267,7 @@ C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\
 C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\obj\Debug\net6.0\FinalMvc.pdb
 C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\obj\Debug\net6.0\FinalMvc.genruntimeconfig.cache
 C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\obj\Debug\net6.0\ref\FinalMvc.dll
+C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\samir\OneDrive\Рабочий стол\Final-Project\FinalMvc\FinalMvc\obj\Debug\net6.0\FinalMvc.MvcApplicationPartsAssemblyInfo.cs

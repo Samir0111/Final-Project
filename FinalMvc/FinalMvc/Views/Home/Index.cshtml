@@ -284,8 +284,29 @@
                 <h2>SOME FEEDBACKS</h2>
                 <div class="divider"></div>
             </div>
-
             <div class="testimonials-carousel">
+                @foreach (var testimonial in Model.Testimonials)
+                {
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            @for (int i = 0; i < testimonial.Rating; i++)
+                            {
+                                <span>&#9733;</span>
+                            }
+                            @for (int i = testimonial.Rating; i < 5; i++)
+                            {
+                                <span style="color: #ccc;">&#9733;</span>
+                            }
+                        </div>
+                        <p class="testimonial-text">@testimonial.Comment</p>
+                        <h4 class="testimonial-author">@testimonial.UserName</h4>
+                    </div>
+                }
+            </div>
+
+
+          @*   <div class="testimonials-carousel">
+
                 <div class="testimonial-card">
                     <div class="stars">
                         <span>&#9733;</span>
@@ -323,7 +344,7 @@
                 </div>
 
 
-            </div>
+            </div> *@
 
             <button type="button" class=" btnn " onclick="location.href='./blog.html#testimonial-section'">
                 <strong>Add Testimonial</strong>
