@@ -261,32 +261,22 @@
                             <span class="menu-title">User Roles</span>
                         </a>
                     </li>
-
-
-
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#blog" aria-expanded="false" aria-controls="blog">
-                            <i class="mdi mdi-blogger menu-icon"></i>
-                            <span class="menu-title">Blog</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="blog">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="BlogArticle" asp-action="Index"> Blog Articles </a></li>
-
-                                <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="BlogCategory" asp-action="Index"> Blog Categories </a></li>
-
-                                <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="BlogNews" asp-action="Index"> Blog News </a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="documentation/documentation.html">
-                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-                            <span class="menu-title">Documentation</span>
+                        <a class="nav-link" asp-controller="Menu" asp-action="Index">
+                            <i class="mdi mdi-food menu-icon"></i>
+                            <span class="menu-title">Menu</span>
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="FoodCategory" asp-action="Index">
+                            <i class="mdi mdi-pizza menu-icon"></i>
+                            <span class="menu-title">Food Category</span>
+                        </a>
+                    </li>
+
+
+                  
                 </ul>
             </nav>
             @RenderBody()

@@ -59,16 +59,26 @@ namespace FinalMvc.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(MenuVM model)
         {
+
+            if (model.SellPrice > model.Price)
+            {
+                ModelState.AddModelError("SellPrice", "Sell Price must be lower than the original Price.");
+            }
             if (!ModelState.IsValid)
             {
                 ViewBag.Categories = _context.FoodCategories.ToList();
-                return View(model);
+
             }
 
             var food = _mapper.Map<Food>(model);
-
-            if (model.Photo != null)
-            {
+           
+            if (model.Photo != null
+     && model.Price > 0
+     && !string.IsNullOrWhiteSpace(model.Description)
+     && model.FoodCategoryId > 0
+     && !string.IsNullOrWhiteSpace(model.Name)
+     &&  model.SellPrice < model.Price)
+            { 
                 var uniqueFileName = $"{Guid.NewGuid()}_{model.Photo.FileName}";
                 var uploadsFolder = Path.Combine(_env.WebRootPath, "assets", "imgs");
                 var filePath = Path.Combine(uploadsFolder, uniqueFileName);
@@ -78,13 +88,18 @@ namespace FinalMvc.Areas.Admin.Controllers
                     await model.Photo.CopyToAsync(stream);
                 }
 
+
                 food.Image = uniqueFileName;
+                await _context.Foods.AddAsync(food);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
             }
-
-            await _context.Foods.AddAsync(food);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction(nameof(Index));
+            else
+            {
+                return View(model);
+            }
+         
         }
 
         public async Task<IActionResult> Edit(int? id)
@@ -108,6 +123,16 @@ namespace FinalMvc.Areas.Admin.Controllers
             var food = await _context.Foods.FindAsync(id);
             if (food == null) return NotFound();
 
+            if (model.SellPrice > model.Price)
+            {
+                ModelState.AddModelError("SellPrice", "Sell Price cannot be greater than the original Price.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Categories = await _context.FoodCategories.ToListAsync();
+            }
+
             if (model.Photo != null)
             {
                 var existingImagePath = Path.Combine(_env.WebRootPath, "assets", "imgs", food.Image);
@@ -128,15 +153,24 @@ namespace FinalMvc.Areas.Admin.Controllers
                 food.Image = uniqueFileName;
             }
 
+            // Updating food properties
             food.Name = model.Name;
             food.Description = model.Description;
             food.Price = model.Price;
             food.SellPrice = model.SellPrice;
             food.FoodCategoryId = model.FoodCategoryId;
+            if (model.SellPrice < model.Price)
+            {
 
-            await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
+            }
         }
 
 

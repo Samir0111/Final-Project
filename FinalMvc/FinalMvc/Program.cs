@@ -61,8 +61,12 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 
 });
-// FluentValidation
-builder.Services.AddFluentValidationAutoValidation(options => options.DisableDataAnnotationsValidation = true);
+//// FluentValidation
+//builder.Services.AddFluentValidationAutoValidation(options => options.DisableDataAnnotationsValidation = true);
+//builder.Services.AddValidatorsFromAssemblyContaining<TestimonialAddValidation>();
+
+// Enable both FluentValidation and DataAnnotations validation
+builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<TestimonialAddValidation>();
 
 

@@ -27,8 +27,8 @@
                     <tr>
                         <td>@food.Name</td>
                         <td>@food.Description</td>
-                        <td>@food.Price.ToString("C")</td>
-                        <td>@(food.SellPrice.HasValue ? food.SellPrice.Value.ToString("C") : "-")</td>
+                        <td>@food.Price</td>
+                        <td>@(food.SellPrice.HasValue ? food.SellPrice.Value.ToString("") : "-")</td>
                         <td>@food.FoodCategory.Name</td>
                         <td>
                             <img src="/assets/imgs/@food.Image" alt="@food.Name" style="max-width: 100px; height: auto;" />

@@ -58,16 +58,24 @@ namespace FinalMvc.Areas.Admin.Controllers
                 return View(model);
             }
 
-            var category = new FoodCategory
+            if (model.Name is not null)
             {
-                Name = model.Name
-            };
 
-            await _context.FoodCategories.AddAsync(category);
-            await _context.SaveChangesAsync();
+                var category = new FoodCategory
+                {
+                    Name = model.Name
+                };
 
-            TempData["Message"] = "Category created successfully!";
-            return RedirectToAction(nameof(Index));
+                await _context.FoodCategories.AddAsync(category);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            else
+            {
+                return View(model);
+
+            }
         }
 
         // Edit - Display form

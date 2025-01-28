@@ -62,12 +62,20 @@ namespace FinalMvc.Areas.Admin.Controllers
                 foreach (var itemm in otherItems) itemm.IsMain = false;
             }
 
+            if (model.Catch is not null & model.Subtitle is not null & model.Title is not null)
+            {
+                await _context.AppointmentSections.AddAsync(section);
+                await _context.SaveChangesAsync();
 
-            await _context.AppointmentSections.AddAsync(section);
-            await _context.SaveChangesAsync();
 
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
 
-            return RedirectToAction(nameof(Index));
+            }
+              
         }
 
         [HttpPost]

@@ -7,7 +7,7 @@ namespace FinalMvc.ViewModels.Admin.VideoPreviews
         public int Id { get; set; }
         public string YtLink { get; set; }
         public string PreviewImage { get; set; }
-        public IFormFile Photo { get; set; } // For uploading the preview image
+        public IFormFile Photo { get; set; }
         public bool IsMain { get; set; }
     }
 }

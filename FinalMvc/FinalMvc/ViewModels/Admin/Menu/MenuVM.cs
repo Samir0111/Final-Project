@@ -22,5 +22,7 @@ namespace FinalMvc.ViewModels.Admin.Menu
         public int FoodCategoryId { get; set; }
 
         public IFormFile Photo { get; set; } // For uploading files
+
+
     }
 }
