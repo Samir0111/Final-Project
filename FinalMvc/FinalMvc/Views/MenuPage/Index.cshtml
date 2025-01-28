@@ -1,124 +1,177 @@
-﻿
-@model MenuPageVM
+﻿@model MenuPageVM
 
-
-
-
-<main>
-
-    <section class="headerbottomabout-section" style="background-image: url('../assets/imgs/test-bg.png');">
-        <div class="container text-center">
-            <div class="headerbottomabout-content">
-                <h1 class="headerbottomabout-title">Menu</h1>
-                <nav class="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span>></span>
-                    <a href="#" class="active">Menu</a>
-                </nav>
-            </div>
+<section class="headerbottomabout-section" style="background-image: url('../assets/imgs/test-bg.png');">
+    <div class="container text-center">
+        <div class="headerbottomabout-content">
+            <h1 class="headerbottomabout-title">MENU</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <a href="#" class="active">Menu</a>
+            </nav>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="menu-section" style="background-image: url('./assets/imgs/menu-bg.png'); background-size: cover; background-attachment: fixed;">
-        <div class="container text-center py-5">
-
-
-            <div class="filters d-flex justify-content-center my-4 flex-wrap">
-                <select id="priceFilter" class="form-select me-3 mb-2" style="width: 220px;">
-                    <option value="default">Sort by Price</option>
-                    <option value="low-to-high">Low to High</option>
-                    <option value="high-to-low">High to Low</option>
-                </select>
-                <div class="categories">
-                    <button class="btn btn-outline-light mx-2 mb-2">All</button>
-                    <button class="btn btn-outline-light mx-2 mb-2">Desserts</button>
-                    <button class="btn btn-outline-light mx-2 mb-2">Main Course</button>
-                    <button class="btn btn-outline-light mx-2 mb-2">Salads</button>
-                    <button class="btn btn-outline-light mx-2 mb-2">Soups</button>
-                </div>
-            </div>
-
-            <div id="mealsContainer" class="row popular-meals">
-            </div>
-
-            <div id="pagination" class="pagination justify-content-center mt-5"></div>
-        </div>
-    </section>
-
-
-
-</main>
-
-
-
-<script>
-
-
-    const mealsData = [
-        { id: 1, name: "Crispy Fried Chicken", category: "Main Course", price: 13.00, image: "./assets/imgs/foodpichome1.png" },
-        { id: 2, name: "Grilled Salmon", category: "Main Course", price: 25.00, image: "./assets/imgs/foodpichome2.png" },
-        { id: 3, name: "Chocolate Cake", category: "Desserts", price: 7.50, image: "./assets/imgs/foodpichome3.png" },
-        { id: 4, name: "Caesar Salad", category: "Salads", price: 10.00, image: "./assets/imgs/foodpichome4.png" },
-        { id: 5, name: "Tomato Soup", category: "Soups", price: 6.00, image: "./assets/imgs/foodpichome5.png" },
-        { id: 6, name: "Pancakes", category: "Desserts", price: 8.00, image: "./assets/imgs/foodpichome6.png" },
-        { id: 7, name: "Steak", category: "Main Course", price: 30.00, image: "./assets/imgs/foodpichome7.png" },
-        { id: 8, name: "Mixed Veg Salad", category: "Salads", price: 9.50, image: "./assets/imgs/foodpichome8.png" },
-        { id: 8, name: "Mixed Veg Salad", category: "Salads", price: 9.50, image: "./assets/imgs/foodpichome8.png" },
-
-    ];
-
-    let currentPage = 1;
-    const itemsPerPage = 4;
-
-    function renderMeals(data) {
-        const container = document.getElementById('mealsContainer');
-        container.innerHTML = '';
-        data.forEach(meal => {
-            container.innerHTML += `
-              <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center mb-4">
-                <img src="${meal.image}" alt="${meal.name}" class="food-img me-3">
-                <div class="meal-details">
-                  <h4 class="text-light mb-1">${meal.name}</h4>
-                  <p class="text-secondary mb-0">${meal.category}</p>
-                </div>
-                <div class="meal-price ms-auto">
-                  <span class="new-price bg-warning text-dark py-1 px-3 rounded">$${meal.price.toFixed(2)}</span>
-                </div>
-              </div>
-            `;
-        });
+<style>
+    .menu-item {
+        border-radius: 15px;
+        overflow: hidden;
+        background: white;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     }
 
-    function paginateMeals() {
-        const pagination = document.getElementById('pagination');
-        pagination.innerHTML = '';
-        const totalPages = Math.ceil(mealsData.length / itemsPerPage);
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
 
-        for (let i = 1; i <= totalPages; i++) {
-            pagination.innerHTML += `<button class="btn btn-outline-light mx-1 ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .menu-item .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+    .pagination a {
+        cursor: pointer;
+    }
+</style>
+
+<div class="container my-5">
+
+    <div class="row mb-4 justify-content-center">
+        <div class="col-md-3">
+            <select id="categoryFilter" class="form-select">
+                <option value="">All Categories</option>
+                @foreach (var category in Model.Categories)
+                {
+                    <option value="@category.Name" selected="@(Model.SelectedCategory == category.Name ? "selected" : null)">
+                        @category.Name
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <select id="priceFilter" class="form-select">
+                <option value="">Sort by Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <input type="search" id="searchBox" class="form-control" placeholder="Search by name...">
+        </div>
+    </div>
+
+    <div class="row g-4" id="menuItems">
+        @foreach (var food in Model.Foods)
+        {
+            <div class="col-md-4 menu-item text-center p-3" data-price="@food.Price" data-category="@food.FoodCategory.Name">
+                <img src="/assets/imgs/@food.Image" alt="@food.Name" class="rounded-top">
+                <div class="p-3">
+                    <h5 class="text-dark">@food.Name</h5>
+                    <p class="text-muted">@food.Description</p>
+                    <p class="price text-danger">
+                        <strong>$@food.SellPrice</strong>
+                        <span class="text-muted text-decoration-line-through">$@food.Price</span>
+                    </p>
+                    <a asp-controller="MenuPage" asp-action="Detail" asp-route-id="@food.Id" class="btn btn-outline-primary">View Details</a>
+                </div>
+            </div>
+        }
+    </div>
+
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center" id="pagination">
+        </ul>
+    </nav>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    const itemsPerPage = 6;
+    let currentPage = 1;
+    let originalItems = $('.menu-item').clone();
+
+    function paginate(items) {
+        const totalItems = items.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        $('#pagination').empty();
+
+        if (totalPages > 1) {
+            for (let i = 1; i <= totalPages; i++) {
+                $('#pagination').append(`<li class="page-item ${(i === currentPage ? 'active' : '')}">
+                            <a class="page-link" href="#" data-page="${i}">${i}</a>
+                        </li>`);
+            }
         }
 
         const start = (currentPage - 1) * itemsPerPage;
         const end = start + itemsPerPage;
-        renderMeals(mealsData.slice(start, end));
+        items.hide().slice(start, end).show();
     }
 
-    function changePage(page) {
-        currentPage = page;
-        paginateMeals();
-    }
+    function filterItems() {
+        const category = $('#categoryFilter').val().toLowerCase();
+        const priceOrder = $('#priceFilter').val();
+        const searchText = $('#searchBox').val().toLowerCase();
 
-    document.getElementById('priceFilter').addEventListener('change', (event) => {
-        const filter = event.target.value;
-        if (filter === 'low-to-high') {
-            mealsData.sort((a, b) => a.price - b.price);
-        } else if (filter === 'high-to-low') {
-            mealsData.sort((a, b) => b.price - a.price);
+        $('#menuItems').empty().append(originalItems.clone());
+        let filteredItems = $('.menu-item');
+
+        if (category) {
+            filteredItems = filteredItems.filter(function () {
+                return $(this).data('category').toLowerCase() === category;
+            });
         }
-        paginateMeals();
+
+        if (searchText) {
+            filteredItems = filteredItems.filter(function () {
+                return $(this).find('h5').text().toLowerCase().includes(searchText);
+            });
+        }
+
+        let sortedItems = filteredItems.toArray().sort((a, b) => {
+            const priceA = parseFloat($(a).data('price'));
+            const priceB = parseFloat($(b).data('price'));
+            return priceOrder === 'low' ? priceA - priceB : priceB - priceA;
+        });
+
+        $('#menuItems').empty().append(sortedItems);
+        paginate($(sortedItems));
+    }
+
+    $(document).on('change keyup', '#categoryFilter, #priceFilter, #searchBox', function () {
+        currentPage = 1;
+        filterItems();
     });
 
-    paginateMeals();
+    $(document).on('click', '#pagination a', function (e) {
+        e.preventDefault();
+        currentPage = parseInt($(this).data('page'));
+        filterItems();
+    });
 
-
+    $(document).ready(function () {
+        originalItems = $('.menu-item').clone();
+        filterItems();
+    });
 </script>

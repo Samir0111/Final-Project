@@ -28,6 +28,9 @@ namespace FinalMvc.ViewModels
 
         public List<AboutSection> AboutSections { get; set; }
         public List<Testimonial> Testimonials { get; set; }
+        public List<Food> Foods { get; set; }
+
+
 
 
 

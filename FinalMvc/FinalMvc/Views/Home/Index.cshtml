@@ -174,101 +174,26 @@
             </div>
 
             <div class="row popular-meals">
+
+
+
+
+                @foreach( var item in Model.Foods){
+
+                
                 <div class="col-md-6 d-flex align-items-center my-3">
-                    <img src="~/assets/imgs/foodpichome1.png" alt="Crispy Fried Chicken" class="food-img">
+                    <img src="~/assets/imgs/@item.Image" alt="Crispy Fried Chicken" class="food-img">
                     <div class="meal-details ms-3">
-                        <h4>CRISPY FRIED CHICKEN</h4>
-                        <p>Hot, Big, Full Platter, Cosmos</p>
+                        <h4>@item.Name</h4>
+                        <p>@item.Description</p>
                     </div>
                     <div class="meal-price ms-auto">
-                        <span class="new-price">$13.00</span>
-                        <span class="old-price">$19.00</span>
+                        <span class="new-price">$@item.SellPrice</span>
+                        <span class="old-price">$@item.Price</span>
                     </div>
                 </div>
 
-                <div class="col-md-6 d-flex align-items-center my-3">
-                    <img src="~/assets/imgs/foodpichome2.png" alt="Crispy Fried Chicken" class="food-img">
-                    <div class="meal-details ms-3">
-                        <h4>CRISPY FRIED CHICKEN</h4>
-                        <p>Hot, Big, Full Platter, Cosmos</p>
-                    </div>
-                    <div class="meal-price ms-auto">
-                        <span class="new-price">$13.00</span>
-                        <span class="old-price">$19.00</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 d-flex align-items-center my-3">
-                    <img src="~/assets/imgs/foodpichome3.png" alt="Crispy Fried Chicken" class="food-img">
-                    <div class="meal-details ms-3">
-                        <h4>CRISPY FRIED CHICKEN</h4>
-                        <p>Hot, Big, Full Platter, Cosmos</p>
-                    </div>
-                    <div class="meal-price ms-auto">
-                        <span class="new-price">$13.00</span>
-                        <span class="old-price">$19.00</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 d-flex align-items-center my-3">
-                    <img src="~/assets/imgs/foodpichome4.png" alt="Crispy Fried Chicken" class="food-img">
-                    <div class="meal-details ms-3">
-                        <h4>CRISPY FRIED CHICKEN</h4>
-                        <p>Hot, Big, Full Platter, Cosmos</p>
-                    </div>
-                    <div class="meal-price ms-auto">
-                        <span class="new-price">$13.00</span>
-                        <span class="old-price">$19.00</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 d-flex align-items-center my-3">
-                    <img src="~/assets/imgs/foodpichome5.png" alt="Crispy Fried Chicken" class="food-img">
-                    <div class="meal-details ms-3">
-                        <h4>CRISPY FRIED CHICKEN</h4>
-                        <p>Hot, Big, Full Platter, Cosmos</p>
-                    </div>
-                    <div class="meal-price ms-auto">
-                        <span class="new-price">$13.00</span>
-                        <span class="old-price">$19.00</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 d-flex align-items-center my-3">
-                    <img src="~/assets/imgs/foodpichome6.png" alt="Crispy Fried Chicken" class="food-img">
-                    <div class="meal-details ms-3">
-                        <h4>CRISPY FRIED CHICKEN</h4>
-                        <p>Hot, Big, Full Platter, Cosmos</p>
-                    </div>
-                    <div class="meal-price ms-auto">
-                        <span class="new-price">$13.00</span>
-                        <span class="old-price">$19.00</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 d-flex align-items-center my-3">
-                    <img src="~/assets/imgs/foodpichome7.png" alt="Crispy Fried Chicken" class="food-img">
-                    <div class="meal-details ms-3">
-                        <h4>CRISPY FRIED CHICKEN</h4>
-                        <p>Hot, Big, Full Platter, Cosmos</p>
-                    </div>
-                    <div class="meal-price ms-auto">
-                        <span class="new-price">$13.00</span>
-                        <span class="old-price">$19.00</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 d-flex align-items-center my-3">
-                    <img src="~/assets/imgs/foodpichome8.png" alt="Crispy Fried Chicken" class="food-img">
-                    <div class="meal-details ms-3">
-                        <h4>CRISPY FRIED CHICKEN</h4>
-                        <p>Hot, Big, Full Platter, Cosmos</p>
-                    </div>
-                    <div class="meal-price ms-auto">
-                        <span class="new-price">$13.00</span>
-                        <span class="old-price">$19.00</span>
-                    </div>
-                </div>
+                }
             </div>
 
             <div class="discount-banner mt-5">

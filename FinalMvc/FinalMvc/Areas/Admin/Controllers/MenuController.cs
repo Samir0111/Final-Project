@@ -60,9 +60,9 @@ namespace FinalMvc.Areas.Admin.Controllers
         public async Task<IActionResult> Create(MenuVM model)
         {
 
-            if (model.SellPrice > model.Price)
+            if (model.SellPrice > model.Price || model.SellPrice <= 0)
             {
-                ModelState.AddModelError("SellPrice", "Sell Price must be lower than the original Price.");
+                ModelState.AddModelError("SellPrice", "Sell Price must be lower than the original Price or Null.");
             }
             if (!ModelState.IsValid)
             {
@@ -77,7 +77,8 @@ namespace FinalMvc.Areas.Admin.Controllers
      && !string.IsNullOrWhiteSpace(model.Description)
      && model.FoodCategoryId > 0
      && !string.IsNullOrWhiteSpace(model.Name)
-     &&  model.SellPrice < model.Price)
+     &&  model.SellPrice < model.Price
+      && model.SellPrice >0)
             { 
                 var uniqueFileName = $"{Guid.NewGuid()}_{model.Photo.FileName}";
                 var uploadsFolder = Path.Combine(_env.WebRootPath, "assets", "imgs");
@@ -159,7 +160,15 @@ namespace FinalMvc.Areas.Admin.Controllers
             food.Price = model.Price;
             food.SellPrice = model.SellPrice;
             food.FoodCategoryId = model.FoodCategoryId;
-            if (model.SellPrice < model.Price)
+
+            if (model.SellPrice < model.Price
+                
+     && model.Price > 0
+     && !string.IsNullOrWhiteSpace(model.Description)
+     && model.FoodCategoryId > 0
+     && !string.IsNullOrWhiteSpace(model.Name)
+  
+      && model.SellPrice > 0)
             {
 
 

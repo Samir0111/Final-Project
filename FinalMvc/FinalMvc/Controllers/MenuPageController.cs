@@ -33,5 +33,17 @@ namespace FinalMvc.Controllers
 
             return View(model);
         }
+
+        public async Task<IActionResult> Detail(int id)
+        {
+            var food = await _context.Foods
+                .Include(f => f.FoodCategory)
+                .FirstOrDefaultAsync(f => f.Id == id);
+
+            if (food == null) return NotFound();
+
+            return View(food);
+        }
+
     }
 }

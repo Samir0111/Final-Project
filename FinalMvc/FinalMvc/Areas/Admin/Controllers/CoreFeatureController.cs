@@ -110,9 +110,16 @@ namespace FinalMvc.Areas.Admin.Controllers
 
                 feature.Image = uniqueFileName;
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if ( model.Title != null & model.Description != null)
+            {
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
+            }
+                
         }
 
         [HttpGet]

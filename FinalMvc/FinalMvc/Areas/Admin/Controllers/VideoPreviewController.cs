@@ -163,9 +163,17 @@ namespace FinalMvc.Areas.Admin.Controllers
                 var otherVideos = await _context.VideoPreviews.Where(v => v.IsMain && v.Id != id).ToListAsync();
                 foreach (var vid in otherVideos) vid.IsMain = false;
             }
+            if (!string.IsNullOrEmpty(model.YtLink))
+            {
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
+            }
         }
 
         [HttpPost]

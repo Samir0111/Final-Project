@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2n+L7NNjdwM=",
+  "dgSpecHash": "iA3600rKFwI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc.csproj",
+  "projectFilePath": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\FinalMvc\\FinalMvc\\FinalMvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samir\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\samir\\.nuget\\packages\\bouncycastle.cryptography\\2.5.0\\bouncycastle.cryptography.2.5.0.nupkg.sha512",

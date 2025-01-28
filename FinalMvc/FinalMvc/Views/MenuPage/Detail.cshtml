@@ -1,0 +1,108 @@
+﻿@model FinalMvc.Models.Food
+@* 
+<section class="headerbottomabout-section" style="background-image: url('../assets/imgs/test-bg.png');">
+    <div class="container text-center">
+        <div class="headerbottomabout-content">
+            <h1 class="headerbottomabout-title">Food detail</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <a href="#" class="active">Food Detail</a>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+
+    <div class="container my-5">
+        <a asp-controller="MenuPage" asp-action="Index" class="btn btn-secondary mb-3">← Back to Menu</a>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/assets/imgs/@Model.Image" alt="@Model.Name" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h1>@Model.Name</h1>
+                <p><strong>Category:</strong> @Model.FoodCategory.Name</p>
+                <p>@Model.Description</p>
+                <p>
+                    <strong class="text-success">@Model.SellPrice</strong>
+                    <span class="text-muted text-decoration-line-through">@Model.Price</span>
+                </p>
+            </div>
+        </div>
+    </div>
+ *@
+
+<style>
+    .food-detail-container {
+        max-width: 1000px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .food-image {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 400px;
+    }
+
+    .price-box {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .original-price {
+        text-decoration: line-through;
+        color: grey;
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+        color: white;
+    }
+
+        .breadcrumb a:hover {
+            color: #ffcc00;
+        }
+</style>
+<body>
+
+    <section class="headerbottomabout-section" style="background-image: url('../assets/imgs/test-bg.png'); background-size: cover; background-position: center;">
+        <div class="container text-center text-white py-5">
+            <div class="headerbottomabout-content">
+                <h1 class="headerbottomabout-title display-4 fw-bold">Food Detail</h1>
+                <nav class="breadcrumb d-flex justify-content-center bg-transparent">
+                    <a asp-controller="Home" asp-action="Index">Home</a>
+                    <span class="text-light mx-2">></span>
+                    <a asp-controller="MenuPage" asp-action="Index" class="text-light text-decoration-none">Menu</a>
+                    <span class="text-light mx-2">></span>
+                    <a href="#" class="active text-light text-decoration-none">@Model.Name</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5 food-detail-container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/assets/imgs/@Model.Image" alt="@Model.Name" class="food-image">
+            </div>
+            <div class="col-md-6">
+                <h1 class="fw-bold">@Model.Name</h1>
+                <p class="text-muted">Category: @Model.FoodCategory.Name</p>
+                <p class="lead">@Model.Description</p>
+                <p class="price-box text-danger">
+                    <strong>$@Model.SellPrice</strong>
+                    <span class="original-price">$@Model.Price</span>
+                </p>
+                <a asp-controller="MenuPage" asp-action="Index" class="btn btn-outline-secondary btn-lg">Back to Menu</a>
+            </div>
+        </div>
+    </div>
+
+</body>

@@ -145,7 +145,16 @@ namespace FinalMvc.Areas.Admin.Controllers
 
                 slider.Image = uniqueFileName;
             }
+            if (model.SubTitle is not null & model.Title is not null & model.Desc is not null)
+            {
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
 
+            }
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

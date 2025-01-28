@@ -125,9 +125,15 @@ namespace FinalMvc.Areas.Admin.Controllers
 
                 chefs.Image = uniqueFileName;
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if (model.Name is not null & model.Position is not null)
+            {
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
+            }
         }
 
         [HttpPost]

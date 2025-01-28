@@ -58,7 +58,8 @@ namespace FinalMvc.Controllers
         .Where(t => t.IsPublished) 
         .ToListAsync();
 
-
+            var food = await _context.Foods
+          .ToListAsync();
             return View(new HomeVM
             {
 
@@ -79,6 +80,9 @@ namespace FinalMvc.Controllers
 
                  Testimonials = testimonials 
 
+                 ,
+
+                 Foods = food,
 
             });
         }

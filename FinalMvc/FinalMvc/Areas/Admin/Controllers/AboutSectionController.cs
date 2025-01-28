@@ -143,9 +143,17 @@ namespace FinalMvc.Areas.Admin.Controllers
 
                 about.Pfp = uniqueFileName;
             }
+            if ( model.Desc != null & model.Name != null & model.Title != null & model.Subtitle != null & model.Position != null)
+            {
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
+            }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
         }
 
         [HttpPost]

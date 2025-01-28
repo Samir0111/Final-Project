@@ -2711,11 +2711,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc.csproj",
+      "projectUniqueName": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\FinalMvc\\FinalMvc\\FinalMvc.csproj",
       "projectName": "FinalMvc",
-      "projectPath": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\FinalMvc.csproj",
+      "projectPath": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\FinalMvc\\FinalMvc\\FinalMvc.csproj",
       "packagesPath": "C:\\Users\\samir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\Final-Project\\FinalMvc\\FinalMvc\\obj\\",
+      "outputPath": "C:\\Users\\samir\\OneDrive\\Рабочий стол\\FinalMvc\\FinalMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

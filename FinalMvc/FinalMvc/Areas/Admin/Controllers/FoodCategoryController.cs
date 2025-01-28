@@ -53,10 +53,7 @@ namespace FinalMvc.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(FoodCategoryVM model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+        
 
             if (model.Name is not null)
             {
@@ -105,11 +102,8 @@ namespace FinalMvc.Areas.Admin.Controllers
             {
                 return BadRequest();
             }
+           
 
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
 
             var category = await _context.FoodCategories.FindAsync(id);
             if (category == null)
@@ -118,11 +112,18 @@ namespace FinalMvc.Areas.Admin.Controllers
             }
 
             category.Name = model.Name;
+            if (model.Name is not null)
+            {
 
-            await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
 
-            TempData["Message"] = "Category updated successfully!";
-            return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
+            }
+
         }
 
         // Delete

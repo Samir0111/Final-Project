@@ -126,9 +126,15 @@ namespace FinalMvc.Areas.Admin.Controllers
 
                 blogPost.Image = uniqueFileName;
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if (model.ByWho is not null & model.Date is not null & model.Category is not null & model.Description is not null & model.Title is not null)
+            {
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {return View(model);
+            }
+               
         }
 
         [HttpPost]
