@@ -1,0 +1,33 @@
+﻿@model TableVM
+
+<div class="container mt-5">
+    <h2 class="text-center">Add New Table</h2>
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label asp-for="TableNumber">Table Number</label>
+            <input asp-for="TableNumber" type="text" class="form-control" />
+            <span asp-validation-for="TableNumber" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="GuestCapacity">Guest Capacity</label>
+            <input asp-for="GuestCapacity" type="number" class="form-control" />
+            <span asp-validation-for="GuestCapacity" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="AvailabilityStart">Availability Start</label>
+            <input asp-for="AvailabilityStart" type="datetime-local" class="form-control" />
+            <span asp-validation-for="AvailabilityStart" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="AvailabilityEnd">Availability End</label>
+            <input asp-for="AvailabilityEnd" type="datetime-local" class="form-control" />
+            <span asp-validation-for="AvailabilityEnd" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Add Table</button>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
+    </form>
+</div>

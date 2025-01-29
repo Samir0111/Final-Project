@@ -32,11 +32,12 @@ namespace FinalMvc.Mappings
             CreateMap<AboutSection, AboutSectionVM>().ReverseMap();
             CreateMap<AppointmentSection, AppointmentSectionVM>().ReverseMap();
             CreateMap<MenuVM, Food>()
-                .ForMember(dest => dest.Image, opt => opt.Ignore()); // Ignore Photo property (handled manually)
+                .ForMember(dest => dest.Image, opt => opt.Ignore()); 
 
             CreateMap<Food, MenuVM>();
 
 
+            CreateMap<Table, TableVM>().ReverseMap();
 
 
 

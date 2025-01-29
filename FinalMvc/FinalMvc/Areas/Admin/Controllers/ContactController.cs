@@ -17,7 +17,6 @@ namespace FinalMvc.Areas.Admin.Controllers
             _context = context;
         }
 
-        // GET: Admin/Contact
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -25,7 +24,6 @@ namespace FinalMvc.Areas.Admin.Controllers
             return View(contacts);
         }
 
-        // GET: Admin/Contact/Detail/{id}
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
@@ -38,7 +36,6 @@ namespace FinalMvc.Areas.Admin.Controllers
             return View(contact);
         }
 
-        // POST: Admin/Contact/Delete/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)

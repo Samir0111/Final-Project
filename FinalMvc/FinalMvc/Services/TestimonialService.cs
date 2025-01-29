@@ -16,14 +16,12 @@ namespace FinalMvc.Services
             _context = context;
         }
 
-        // Save a new testimonial
         public async Task SaveTestimonial(Testimonial testimonial)
         {
             await _context.Testimonials.AddAsync(testimonial);
             await _context.SaveChangesAsync();
         }
 
-        // Update an existing testimonial
         public async Task UpdateTestimonialAsync(int id, Testimonial testimonial)
         {
             var existingTestimonial = await _context.Testimonials.FindAsync(id);
@@ -38,19 +36,16 @@ namespace FinalMvc.Services
             }
         }
 
-        // Get a testimonial by ID
         public async Task<Testimonial> GetTestimonialByIdAsync(int id)
         {
             return await _context.Testimonials.FindAsync(id);
         }
 
-        // Get all testimonials
         public async Task<List<Testimonial>> GetTestimonalAsync()
         {
             return await _context.Testimonials.ToListAsync();
         }
 
-        // Delete a testimonial by ID
         public async Task DeleteTestimonialAsync(int id)
         {
             var testimonial = await _context.Testimonials.FindAsync(id);

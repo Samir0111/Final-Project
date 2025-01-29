@@ -18,16 +18,14 @@ namespace FinalMvc.Areas.Admin.Controllers
             _context = context;
         }
 
-        // Index - List all categories
         public async Task<IActionResult> Index()
         {
             var categories = await _context.FoodCategories
-                .Include(c => c.Foods) // Include related foods
+                .Include(c => c.Foods) 
                 .ToListAsync();
             return View(categories);
         }
 
-        // Detail - View details of a specific category and its foods
         public async Task<IActionResult> Detail(int id)
         {
             var category = await _context.FoodCategories
@@ -42,13 +40,11 @@ namespace FinalMvc.Areas.Admin.Controllers
             return View(category);
         }
 
-        // Create - Display form
         public IActionResult Create()
         {
             return View();
         }
 
-        // Create - Handle form submission
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(FoodCategoryVM model)
@@ -75,7 +71,6 @@ namespace FinalMvc.Areas.Admin.Controllers
             }
         }
 
-        // Edit - Display form
         public async Task<IActionResult> Edit(int id)
         {
             var category = await _context.FoodCategories.FindAsync(id);
@@ -93,7 +88,6 @@ namespace FinalMvc.Areas.Admin.Controllers
             return View(model);
         }
 
-        // Edit - Handle form submission
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, FoodCategoryVM model)
@@ -126,7 +120,6 @@ namespace FinalMvc.Areas.Admin.Controllers
 
         }
 
-        // Delete
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)

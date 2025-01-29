@@ -1,0 +1,40 @@
+﻿@model FinalMvc.ViewModels.Admin.Reservation.ReservationVM
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-dark text-white">
+            <h2>Reservation Details</h2>
+        </div>
+        <div class="card-body">
+            <h4>Table Number:</h4>
+            <p>@Model.TableNumber</p>
+
+          
+            <h4>Reservation Date:</h4>
+            <p>@Model.Date.ToString("yyyy-MM-dd")</p>
+
+            <h4>Reservation Time:</h4>
+            <p>@Model.ReserveTime.ToString("HH:mm") </p>
+
+            <h4>Phone Number:</h4>
+            <p>@Model.PhoneNumber</p>
+
+            <h4>Status:</h4>
+            @if (Model.Status == "Approved")
+            {
+                <span class="badge bg-success">Approved</span>
+            }
+            else if (Model.Status == "Declined")
+            {
+                <span class="badge bg-danger">Declined</span>
+            }
+            else
+            {
+                <span class="badge bg-warning text-dark">Pending</span>
+            }
+        </div>
+        <div class="card-footer text-center">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>

@@ -73,7 +73,6 @@ namespace FinalMvc.Areas.Admin.Controllers
                 chefs.Image = uniqueFileName;
 
 
-                //return View();
                 await _context.Chefsteams.AddAsync(chefs);
                 await _context.SaveChangesAsync();
 

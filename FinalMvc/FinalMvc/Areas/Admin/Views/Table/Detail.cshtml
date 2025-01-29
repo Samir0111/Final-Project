@@ -1,0 +1,22 @@
+﻿@model TableVM
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-dark text-white">
+            <h2>Table #@Model.TableNumber</h2>
+        </div>
+        <div class="card-body">
+            <h4>Guest Capacity:</h4>
+            <p>@Model.GuestCapacity</p>
+
+            <h4>Availability Start:</h4>
+            <p>@(Model.AvailabilityStart.HasValue ? Model.AvailabilityStart.Value.ToString("yyyy-MM-dd HH:mm") : "N/A")</p>
+
+            <h4>Availability End:</h4>
+            <p>@(Model.AvailabilityEnd.HasValue ? Model.AvailabilityEnd.Value.ToString("yyyy-MM-dd HH:mm") : "N/A")</p>
+        </div>
+        <div class="card-footer text-center">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>

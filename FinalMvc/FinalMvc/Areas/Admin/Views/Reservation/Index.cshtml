@@ -1,0 +1,60 @@
+﻿@model IEnumerable<FinalMvc.ViewModels.Admin.Reservation.ReservationVM>
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center">Reservations Management</h2>
+
+    @if (!Model.Any())
+    {
+        <p class="text-danger text-center">No reservations found.</p>
+    }
+    else
+    {
+        <table class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Table Number</th>
+                    <th>Reservation Date</th>
+                    <th>Reserve Time</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var reservation in Model)
+                {
+                    <tr>
+                        <td>@reservation.TableNumber</td>
+                        <td>@reservation.Date.ToString("yyyy-MM-dd")</td>
+                        <td>@reservation.ReserveTime.ToString("HH:mm")</td>
+                        <td>@reservation.PhoneNumber</td>
+                        <td>
+                            @if (reservation.Status == "Approved")
+                            {
+                                <span class="badge bg-success">Approved</span>
+                            }
+                            else if (reservation.Status == "Declined")
+                            {
+                                <span class="badge bg-danger">Declined</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning text-dark">Pending</span>
+                            }
+                        </td>
+                        <td>
+                            <a asp-action="Detail" asp-route-id="@reservation.Id" class="btn btn-info btn-sm">Details</a>
+                            <form asp-action="Approve" method="post" asp-route-id="@reservation.Id" class="d-inline">
+                                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                            </form>
+                            <form asp-action="Decline" method="post" asp-route-id="@reservation.Id" class="d-inline">
+                                <button type="submit" class="btn btn-danger btn-sm">Decline</button>
+                            </form>
+                            <a asp-action="Delete" asp-route-id="@reservation.Id" class="btn btn-outline-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

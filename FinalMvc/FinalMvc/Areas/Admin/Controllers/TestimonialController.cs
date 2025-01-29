@@ -40,15 +40,13 @@ namespace FinalMvc.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
-            // Fetch the testimonial by ID
             var testimonial = await _testimonialService.GetTestimonialByIdAsync(id);
 
             if (testimonial == null)
             {
-                return NotFound(); // Return a 404 page if the testimonial is not found
+                return NotFound();
             }
 
-            // Map the testimonial to the ViewModel (if needed)
             var viewModel = new TestimonialVM
             {
                 Id = testimonial.Id,
@@ -58,7 +56,7 @@ namespace FinalMvc.Areas.Admin.Controllers
                 IsPublished = testimonial.IsPublished
             };
 
-            return View(viewModel); // Pass the ViewModel to the Detail view
+            return View(viewModel);
         }
 
         [HttpPost]

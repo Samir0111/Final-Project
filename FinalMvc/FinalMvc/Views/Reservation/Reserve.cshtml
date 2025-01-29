@@ -1,0 +1,87 @@
+﻿@model FinalMvc.ViewModels.Reservation.TableReservationViewModel
+
+
+
+
+<section class="headerbottomabout-section" style="background-image: url('../assets/imgs/test-bg.png');">
+    <div class="container text-center">
+        <div class="headerbottomabout-content">
+            <h1 class="headerbottomabout-title"> Reservation</h1>
+            <nav class="breadcrumb">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+                <span>&gt;</span>
+                <a href="#" class="active">Reservation</a>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 bg-dark text-white">
+        <div class="card-header text-center">
+            <h3>Reserve Your Table</h3>
+        </div>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger mt-3">
+                <ul>
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <li>@error.ErrorMessage</li>
+                    }
+                </ul>
+            </div>
+        }
+
+        <form asp-action="Reserve" asp-controller="Reservation" method="post" class="mt-4">
+            <input type="hidden" asp-for="TableId" />
+
+            <!-- ✅ Guest Count Input - Now Stays the Same -->
+            <input type="hidden" asp-for="GuestCount" />
+
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Table Number:</label>
+                    <span class="form-control-plaintext text-info">@Model.TableNumber</span>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Guest Capacity:</label>
+                    <span class="form-control-plaintext text-info">@Model.GuestCount</span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="Date" class="form-label">Reservation Date:</label>
+                    <input asp-for="Date" type="date" class="form-control bg-dark text-white" readonly />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="ReserveTime" class="form-label">Reservation Time:</label>
+                    <input asp-for="ReserveTime" type="time" class="form-control bg-dark text-white" readonly />
+                    <span asp-validation-for="ReserveTime" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="PhoneNumber" class="form-label">Phone Number:</label>
+                <input asp-for="PhoneNumber" class="form-control bg-dark text-white" placeholder="Enter your phone number" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-4 py-2 fw-bold">Confirm Reservation</button>
+            </div>
+        </form>
+
+        <div class="text-center mt-4">
+            <a asp-action="AvailableTables" asp-route-date="@Model.Date.ToString("yyyy-MM-dd")"
+               asp-route-guestCount="@Model.GuestCount" class="btn btn-success px-4 py-2 fw-bold">
+                View Available Tables
+            </a>
+        </div>
+    </div>
+</div>

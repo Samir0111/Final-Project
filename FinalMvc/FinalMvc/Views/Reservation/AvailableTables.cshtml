@@ -1,0 +1,119 @@
+﻿@model FinalMvc.ViewModels.Reservation.ReservePageViewModel
+
+<main>
+    <section class="headerbottomabout-section" style="background-image: url('/assets/imgs/test-bg.png');">
+        <div class="container text-center">
+            <div class="headerbottomabout-content">
+                <h1 class="headerbottomabout-title">Reservation</h1>
+                <nav class="breadcrumb">
+                    <a asp-controller="Home" asp-action="Index">Home</a>
+                    <span>&gt;</span>
+                    <a href="#" class="active">Reservation</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="reservation-section">
+        <div class="container">
+            <form asp-action="AvailableTables" method="get" class="reservation-form">
+                <div class="form-group">
+                    <label for="date">
+                        <img src="/assets/imgs/booknow-icon1.png" alt="Check-In" class="form-icon">
+                        CHECK IN
+                    </label>
+                    <input type="date" id="date" name="date" class="form-control"
+                           value="@Model.Reservation.Date.ToString("yyyy-MM-dd")" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="guestCount">
+                        <img src="/assets/imgs/booknow-icon2.png" alt="Guests" class="form-icon">
+                        GUESTS
+                    </label>
+                    <div class="guest-selector">
+                        <button type="button" id="decrement-btn" class="btn-guest">-</button>
+                        <input type="number" id="guestCount" name="guestCount" class="form-control"
+                               value="@Model.Reservation.GuestCount" min="1" max="20" required />
+                        <button type="button" id="increment-btn" class="btn-guest">+</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-reserve">FIND TABLES</button>
+            </form>
+
+        </div>
+    </section>
+
+    @if (Model.AvailableTables != null && Model.AvailableTables.Any())
+    {
+        <section id="available-tables" style="padding: 3%">
+            <div class="container">
+                <h3 class="text-center">Available Tables</h3>
+                <ul class="list-group">
+                    @foreach (var table in Model.AvailableTables)
+                    {
+                        <li class="list-group-item">
+                            <strong>Max Guests: @table.GuestCapacity</strong> - Table Number: @table.TableNumber
+
+                            <form asp-action="Reserve" method="get" class="mt-3">
+                                <input type="hidden" name="tableId" value="@table.Id" />
+                                <input type="hidden" name="date" value="@Model.Reservation.Date.ToString("yyyy-MM-dd")" />
+                                <input type="hidden" name="guestCount" value="@Model.Reservation.GuestCount" /> 
+
+                                <label for="reserveTime">Choose Reservation Time:</label>
+                                <select name="reserveTime" class="form-control" required>
+                                    @{
+                                        var timeSlots = new List<(string label, string value)>
+                            {
+                            ("9:00 AM - 12:00 PM", "09:00"),
+                            ("12:00 PM - 3:00 PM", "12:00"),
+                            ("3:00 PM - 6:00 PM", "15:00"),
+                            ("6:00 PM - 9:00 PM", "18:00")
+                            };
+
+                                        var reservedTimes = Model.ReservationList?.Where(r => r.TableId == table.Id)
+                                        .Select(r => r.ReserveTime.ToString("HH:mm"))
+                                        .ToHashSet() ?? new HashSet<string>(); 
+                                    }
+                                    @foreach (var slot in timeSlots)
+                                    {
+                                        var isReserved = reservedTimes.Contains(slot.value);
+                                        <option value="@slot.value" disabled="@isReserved">
+                                            @slot.label @(isReserved ? "(Reserved)" : "")
+                                        </option>
+                                    }
+                                </select>
+
+                                <button type="submit" class="btn btn-success mt-2">Reserve</button>
+                            </form>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </section>
+    }
+    else
+    {
+        <p class="text-danger text-center mt-4">No tables available for the selected date and guest count.</p>
+    }
+</main>
+
+<script>
+    document.getElementById('decrement-btn').addEventListener('click', function () {
+        var input = document.getElementById('guestCount');
+        if (input.value > 1) {
+            input.value = parseInt(input.value) - 1;
+        }
+    });
+
+    document.getElementById('increment-btn').addEventListener('click', function () {
+        var input = document.getElementById('guestCount');
+        if (input.value < 20) {
+            input.value = parseInt(input.value) + 1;
+        }
+    });
+</script>

@@ -6,5 +6,11 @@ namespace FinalMvc.Models
     {
         public string FullName { get; set; }
 
+        
+        public virtual ICollection<Reservation> Reservations
+        {
+            get; set;
+
+        }
     }
 }

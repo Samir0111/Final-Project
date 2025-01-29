@@ -1,0 +1,70 @@
+﻿@model FinalMvc.ViewModels.Reservation.ReservePageViewModel
+
+
+<section class="headerbottomabout-section" style="background-image: url('../assets/imgs/test-bg.png');">
+    <div class="container text-center">
+        <div class="headerbottomabout-content">
+            <h1 class="headerbottomabout-title">MY Reservations</h1>
+            <nav class="breadcrumb">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+                <span>&gt;</span>
+                <a href="#" class="active">Reservation</a>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-5 pt-5">
+
+    @if (Model.ReservationList == null || !Model.ReservationList.Any())
+    {
+        <p class="text-danger text-center">No reservations found.</p>
+    }
+    else
+    {
+        <table class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Table Number</th>
+                    <th>Reservation Date</th>
+                    <th>Reserve Time</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var reservation in Model.ReservationList)
+                {
+                    <tr>
+                        <td><strong>@reservation.TableNumber</strong></td>
+                        <td>@reservation.Date.ToString("yyyy-MM-dd")</td>
+                        <td>@reservation.ReserveTime.ToString("HH:mm")</td>
+                        <td>@reservation.PhoneNumber</td>
+                        <td>
+                            @if (string.IsNullOrEmpty(reservation.Status))
+                            {
+                                <span class="badge bg-secondary">Pending</span>
+                            }
+                            else if (reservation.Status == "Approved")
+                            {
+                                <span class="badge bg-success">Approved</span>
+                            }
+                            else if (reservation.Status == "Declined")
+                            {
+                                <span class="badge bg-danger">Declined</span>
+                            }
+                            else if (reservation.Status == "Pending")
+                            {
+                                <span class="badge bg-warning text-dark">Pending</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Invalid</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
